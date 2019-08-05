@@ -1,0 +1,575 @@
+<html lang="en"><head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Designing Astro Socks to protect astronauts’ feet in microgravity - Microsoft Educator Center (Preview)</title>
+        <meta property="og:locale" content="en-us">
+        <meta property="og:title" content="Microsoft Educator Centre Preview">
+        <meta property="og:type" content="website">
+        <meta property="og:url" content="https://preview.education.microsoft.com"> 
+        <meta property="og:image" content="https://cdn.preview.education.microsoft.com/content/en-us/pages/homepage/training_1083x609.jpg">
+        <meta property="og:image:width" content="1083">
+        <meta property="og:image:height" content="609">
+        <meta property="og:site_name" content="Microsoft Educator Centre Preview">
+        <meta property="og:description" content="Welcome to the first courses available in your updated Microsoft Educator Centre. Explore new concepts and develop skills while you earn professional development credit.">
+        <meta property="fb:app_id" content="340113966709947">
+        <meta name="twitter:card" content="summary">
+        <meta name="twitter:site" content="@MicrosoftEDU">
+        <link rel="stylesheet" href="https://cdn.preview.education.microsoft.com/dist/public/20190729.2/styles.8ea008340c035216c39d.css">
+        <link rel="stylesheet" href="https://www.microsoft.com/mwf/css/bundle/1.55.0/west-european/default/mwf-main.min.css?apiVersion=1.0">
+        <link rel="icon" type="image/x-icon" href="https://cdn.preview.education.microsoft.com/content/en-us/shared/favicon.ico">
+    
+    <style data-jss="" data-meta="m, Themed, Static">
+    .c0111 {
+      width: 100%;
+      margin: 0 auto;
+      max-width: 1600px;
+    }
+    @media (max-width: 1084px) {
+      .c0111 {
+        padding-left: 5%;
+        padding-right: 5%;
+      }
+    }
+    @media (min-width: 1085px) and (max-width: 1760.0000000000002px) {
+      .c0111 {
+        width: 90%;
+        margin-left: 5%;
+        margin-right: 5%;
+      }
+    }
+    </style><style data-jss="" data-meta="y, Themed, Static">
+    .c012 {
+      width: 100%;
+      height: 48px;
+      background: #ffffff;
+      box-sizing: border-box;
+    }
+    .c013 {
+      border-bottom: 1px solid #DDDDDD;
+    }
+    .c014 {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+    .c015 {
+      display: flex;
+      padding: 8px 0;
+      align-items: flex-start;
+    }
+    .c016:focus {
+      outline: 1px dotted;
+    }
+    .c017 {
+      width: 108px;
+      margin-top: 4px;
+    }
+    .c018 {
+      position: relative;
+      padding-left: 50px;
+    }
+    .c018:before {
+      top: 4px;
+      left: 24px;
+      height: 24px;
+      content: "";
+      position: absolute;
+      border-left: 2px solid #000;
+    }
+    .c019 {
+      font-size: 21px;
+      font-weight: 600;
+    }
+    .c019:hover, .c019:focus {
+      text-decoration: underline;
+    }
+    .c019:focus {
+      outline: 1px dotted;
+    }
+    .c0110 {
+      font-size: 10px;
+      margin-left: 4px;
+      font-weight: 500;
+      text-transform: Uppercase;
+    }
+    @media (max-width: 575.8px) {
+      .c019 {
+        font-size: 14px;
+        font-weight: 600;
+      }
+      .c017 {
+        width: 70px;
+        margin-top: 0;
+      }
+      .c0110 {
+        font-size: 7px;
+      }
+      .c018 {
+        padding-left: 25px;
+      }
+      .c018:before {
+        top: 0;
+        left: 13px;
+      }
+    }
+    </style><style data-jss="" data-meta="y, Unthemed, Static">
+    .c0168 {
+      width: 100%;
+      height: 0;
+      margin: 24px 0;
+      border: 1px solid rgba(0, 0, 0, 0.1);
+      position: relative;
+      background: linear-gradient(0deg, #FAFAFA, #FAFAFA);
+      padding-bottom: 56.25%;
+    }
+    .c0169 {
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      position: absolute;
+    }
+    </style><style data-jss="" data-meta="t, Themed, Static">
+    .c0164 {
+      width: 100%;
+      margin: 10px auto;
+      display: block;
+      font-size: 15px;
+      line-height: 24px;
+    }
+    .c0165 a {
+      color: #0067b8;
+      border: 2px solid transparent;
+      position: relative;
+      font-weight: 500;
+      outline-offset: -3px;
+    }
+    .c0165 ul {
+      list-style: square;
+      padding-left: 40px;
+    }
+    .c0165 h2 {
+      padding: 4px 0 8px;
+      font-size: 24px;
+      line-height: 28px;
+      font-weight: 600;
+    }
+    .c0165 h3 {
+      padding: 8px 0 4px;
+      font-size: 20px;
+      line-height: 24px;
+      font-weight: 600;
+    }
+    .c0165 p {
+      padding: 6px 0 6px;
+      font-size: 15px;
+      line-height: 20px;
+    }
+    .c0166 {
+      margin: 10px auto;
+      max-width: 100%;
+    }
+    .c0167 {
+      height: 100%;
+      padding: 10px 26px;
+      display: flex;
+      flex-flow: column;
+      background: #f5f5f5;
+      align-items: center;
+      margin-bottom: 6px;
+    }
+    </style><style data-jss="" data-meta="t, Unthemed, Static">
+    .c0141 > video {
+      left: auto !important;
+      right: 0;
+    }
+    </style><style data-jss="" data-meta="t, Unthemed, Static">
+    .c0134 {
+      margin-bottom: 10px;
+    }
+    .c0134 img {
+      height: 64px;
+    }
+    .c0135 {
+      font-size: 32px;
+    }
+    .c0136 {
+      font-size: 30px;
+    }
+    .c0137 {
+      font-size: 46px;
+    }
+    .c0138 {
+      padding-top: 15px;
+    }
+    .c0139 {
+      overflow: visible !important;
+    }
+    .c0140 {
+      left: unset !important;
+      max-width: 480px !important;
+    }
+    @media (min-width: 1200px) {
+      .c0139 {
+        max-width: 1600px !important;
+      }
+    }
+    @media (max-width: 991.8px) {
+      .c0140 {
+        flex-direction: column;
+      }
+      .c0135 {
+        font-size: 28px;
+      }
+      .c0136 {
+        font-size: 22px;
+      }
+      .c0137 {
+        font-size: 34px;
+      }
+    }
+    @media (max-width: 575.8px) {
+      .c0135 {
+        font-size: 22px;
+      }
+      .c0136 {
+        font-size: 20px;
+      }
+    }
+    @media (min-width: 768px) {
+      .c0132 {
+        max-height: 30vh;
+        min-height: 370px;
+      }
+    }
+    </style><style data-jss="" data-meta="d, Themed, Static">
+    .c0147 {
+      display: inline;
+      margin-left: 3px !important;
+      font-weight: 400 !important;
+      text-transform: uppercase;
+    }
+    </style><style data-jss="" data-meta="t, Themed, Static">
+    .c0142 {
+      width: 13px;
+      height: 13px;
+      display: inline;
+    }
+    .c0143 {
+      align-items: center;
+      padding-bottom: 24px;
+    }
+    .c0144 {
+      width: 29px;
+      height: 29px;
+      display: inline-block;
+      text-align: center;
+      padding-top: 2px;
+      margin-right: 6px;
+      border-radius: 50%;
+      background-color: white;
+    }
+    .c0145 {
+      margin-right: 4px !important;
+    }
+    .c0146 {
+      text-transform: uppercase;
+    }
+    </style><style data-jss="" data-meta="t, Themed, Static">
+    .c0148 {
+      color: #FFFFFF;
+      border: 2px solid transparent;
+      font-size: 13px;
+      background-color: transparent;
+    }
+    .c0148:hover, .c0148:focus {
+      text-decoration: underline;
+    }
+    .c0148:hover {
+      text-decoration: underline;
+    }
+    .c0149 {
+      width: 290px;
+      text-transform: uppercase;
+    }
+    .c0150 {
+      display: flex;
+      padding-top: 12px;
+      flex-direction: row;
+    }
+    .c0151 {
+      color: #FFFFFF;
+      padding: 0 8px;
+      font-style: normal;
+      font-family: MWF-MDL2;
+    }
+    .c0152 {
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+      justify-content: center;
+    }
+    .c0153 {
+      color: #FFFFFF;
+      border: 2px solid transparent;
+      font-size: 13px;
+      background-color: transparent;
+    }
+    .c0153:hover, .c0153:focus {
+      text-decoration: underline;
+    }
+    .c0153:hover {
+      text-decoration: underline;
+    }
+    @media (max-width: 575.8px) {
+      .c0149 {
+        width: 250px;
+      }
+    }
+    </style><style data-jss="" data-meta="t, Themed, Static">
+    .c0154 {
+      margin: 0;
+    }
+    .c0154 h2 {
+      margin: 24px 0 16px 0;
+      padding: 0;
+      font-size: 24px;
+      font-weight: 600;
+      line-height: 28px;
+    }
+    .c0154 a {
+      color: #0067b8;
+      border: 2px solid transparent;
+      position: relative;
+      font-weight: 500;
+      outline-offset: -3px;
+    }
+    .c0154 p {
+      margin: 16px 0;
+      padding: 0;
+    }
+    .c0154 li {
+      margin: 11px 0;
+    }
+    .c0155 {
+      font-size: 24px;
+      line-height: 28px;
+    }
+    .c0156 {
+      margin: 16px 0px 16px 0px;
+      display: flex;
+      flex-wrap: wrap;
+      vertical-align: middle;
+      justify-content: flex-start;
+    }
+    .c0157 {
+      padding-right: 32px;
+      margin-bottom: 6px;
+    }
+    .c0158 {
+      color: #0078D7;
+      font-style: normal;
+      font-family: MWF-MDL2;
+      padding-right: 8px;
+    }
+    .c0159:before {
+      content: url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTQiIGhlaWdodD0iMTQiIHZpZXdCb3g9IjAgMCAxNCAxNCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4NCjxwYXRoIGQ9Ik03IDE0QzYuMzU0MTcgMTQgNS43MzE3NyAxMy45MTY3IDUuMTMyODEgMTMuNzVDNC41MzkwNiAxMy41ODMzIDMuOTgxNzcgMTMuMzQ5IDMuNDYwOTQgMTMuMDQ2OUMyLjk0NTMxIDEyLjczOTYgMi40NzM5NiAxMi4zNzUgMi4wNDY4OCAxMS45NTMxQzEuNjI1IDExLjUyNiAxLjI2MDQyIDExLjA1NDcgMC45NTMxMjUgMTAuNTM5MUMwLjY1MTA0MiAxMC4wMTgyIDAuNDE2NjY3IDkuNDYwOTQgMC4yNSA4Ljg2NzE5QzAuMDgzMzMzMyA4LjI2ODIzIDAgNy42NDU4MyAwIDdDMCA2LjM1NDE3IDAuMDgzMzMzMyA1LjczNDM4IDAuMjUgNS4xNDA2MkMwLjQxNjY2NyA0LjU0MTY3IDAuNjUxMDQyIDMuOTg0MzggMC45NTMxMjUgMy40Njg3NUMxLjI2MDQyIDIuOTQ3OTIgMS42MjUgMi40NzY1NiAyLjA0Njg4IDIuMDU0NjlDMi40NzM5NiAxLjYyNzYgMi45NDUzMSAxLjI2MzAyIDMuNDYwOTQgMC45NjA5MzhDMy45ODE3NyAwLjY1MzY0NiA0LjUzOTA2IDAuNDE2NjY3IDUuMTMyODEgMC4yNUM1LjczMTc3IDAuMDgzMzMzMyA2LjM1NDE3IDAgNyAwQzcuNjQ1ODMgMCA4LjI2NTYyIDAuMDgzMzMzMyA4Ljg1OTM4IDAuMjVDOS40NTgzMyAwLjQxNjY2NyAxMC4wMTU2IDAuNjUzNjQ2IDEwLjUzMTIgMC45NjA5MzhDMTEuMDUyMSAxLjI2MzAyIDExLjUyMzQgMS42Mjc2IDExLjk0NTMgMi4wNTQ2OUMxMi4zNzI0IDIuNDc2NTYgMTIuNzM3IDIuOTQ3OTIgMTMuMDM5MSAzLjQ2ODc1QzEzLjM0NjQgMy45ODQzOCAxMy41ODMzIDQuNTQxNjcgMTMuNzUgNS4xNDA2MkMxMy45MTY3IDUuNzM0MzggMTQgNi4zNTQxNyAxNCA3QzE0IDcuNjQ1ODMgMTMuOTE2NyA4LjI2ODIzIDEzLjc1IDguODY3MTlDMTMuNTgzMyA5LjQ2MDk0IDEzLjM0NjQgMTAuMDE4MiAxMy4wMzkxIDEwLjUzOTFDMTIuNzM3IDExLjA1NDcgMTIuMzcyNCAxMS41MjYgMTEuOTQ1MyAxMS45NTMxQzExLjUyMzQgMTIuMzc1IDExLjA1MjEgMTIuNzM5NiAxMC41MzEyIDEzLjA0NjlDMTAuMDE1NiAxMy4zNDkgOS40NTgzMyAxMy41ODMzIDguODU5MzggMTMuNzVDOC4yNjU2MiAxMy45MTY3IDcuNjQ1ODMgMTQgNyAxNFpNNyAxQzYuMTcxODggMSA1LjM5MzIzIDEuMTU4ODUgNC42NjQwNiAxLjQ3NjU2QzMuOTQwMSAxLjc4OTA2IDMuMzA0NjkgMi4yMTg3NSAyLjc1NzgxIDIuNzY1NjJDMi4yMTYxNSAzLjMwNzI5IDEuNzg2NDYgMy45NDI3MSAxLjQ2ODc1IDQuNjcxODhDMS4xNTYyNSA1LjM5NTgzIDEgNi4xNzE4OCAxIDdDMSA3LjgyODEyIDEuMTU2MjUgOC42MDY3NyAxLjQ2ODc1IDkuMzM1OTRDMS43ODY0NiAxMC4wNTk5IDIuMjE2MTUgMTAuNjk1MyAyLjc1NzgxIDExLjI0MjJDMy4zMDQ2OSAxMS43ODM5IDMuOTQwMSAxMi4yMTM1IDQuNjY0MDYgMTIuNTMxMkM1LjM5MzIzIDEyLjg0MzggNi4xNzE4OCAxMyA3IDEzQzcuODI4MTIgMTMgOC42MDQxNyAxMi44NDM4IDkuMzI4MTIgMTIuNTMxMkMxMC4wNTczIDEyLjIxMzUgMTAuNjkyNyAxMS43ODM5IDExLjIzNDQgMTEuMjQyMkMxMS43ODEyIDEwLjY5NTMgMTIuMjEwOSAxMC4wNTk5IDEyLjUyMzQgOS4zMzU5NEMxMi44NDExIDguNjA2NzcgMTMgNy44MjgxMiAxMyA3QzEzIDYuMTcxODggMTIuODQxMSA1LjM5NTgzIDEyLjUyMzQgNC42NzE4OEMxMi4yMTA5IDMuOTQyNzEgMTEuNzgxMiAzLjMwNzI5IDExLjIzNDQgMi43NjU2MkMxMC42OTI3IDIuMjE4NzUgMTAuMDU3MyAxLjc4OTA2IDkuMzI4MTIgMS40NzY1NkM4LjYwNDE3IDEuMTU4ODUgNy44MjgxMiAxIDcgMVpNNyA3VjNINlY4SDEwVjdIN1oiIGZpbGw9IiMwMDc4RDciLz4NCjwvc3ZnPg0K');
+    }
+    .c0160:before {
+      content: "\E787";
+    }
+    .c0161:before {
+      content: "\E8EC";
+    }
+    .c0162:before {
+      content: "\E8C8";
+    }
+    .c0163 {
+      color: #757575;
+      order: 99;
+      width: 100%;
+      font-style: italic;
+    }
+    @media (max-width: 767.8px) {
+      .c0156 {
+        margin: 20px 0px 20px 0px;
+      }
+    }
+    </style><style data-jss="" data-meta="g, Themed, Static">
+    .c0116 {
+      width: 100%;
+      color: #666666;
+      height: 56px;
+      bottom: 0;
+      padding: 18px 0;
+      position: absolute;
+      font-size: 12px;
+      background: #F2F2F2;
+      letter-spacing: -0.04em;
+    }
+    .c0117 {
+      display: flex;
+      flex-wrap: wrap;
+    }
+    .c0118 {
+      margin-left: 24px;
+    }
+    .c0119:focus, .c0119:hover {
+      text-decoration: underline;
+    }
+    .c0119:focus {
+      outline: 1px dashed;
+      outline-offset: 3px;
+    }
+    @media (min-width: 576px) {
+      .c0117 {
+        justify-content: flex-end;
+      }
+    }
+    </style><style data-jss="" data-meta="w, Unthemed, Static">
+    .c0130 {
+      display: none !important;
+    }
+    @media (max-width: 767.8px) {
+      .c0131 {
+        display: none !important;
+      }
+      .c0130 {
+        display: inline-block !important;
+      }
+    }
+    </style><style data-jss="" data-meta="x, Unthemed, Static">
+    .c0170 {
+      display: flex;
+      margin-bottom: 24px;
+    }
+    .c0171 {
+      font-weight: bold;
+      text-transform: uppercase;
+    }
+    .c0172 {
+      width: 56px;
+      height: 56px;
+      flex-shrink: 0;
+      margin-right: 12px;
+    }
+    .c0173 {
+      text-transform: uppercase;
+    }
+    </style><style data-jss="" data-meta="t, Themed, Static">
+    .c0120 {
+      margin-top: 50px;
+      margin-bottom: 100px;
+    }
+    .c0121 {
+      border: 1px solid #DDDDDD;
+      max-width: 360px;
+      margin-bottom: 30px;
+    }
+    .c0122 {
+      flex: 1;
+      display: flex;
+      padding: 16px;
+      align-items: flex-start;
+      flex-direction: column;
+    }
+    .c0123 {
+      width: 100%;
+      padding: 11px 16px;
+      font-size: 18px;
+      line-height: 24px;
+      font-weight: bold;
+      border-bottom: 1px solid #DDDDDD;
+    }
+    .c0124 {
+      display: flex;
+    }
+    .c0125 {
+      margin: 16px 0;
+      font-size: 15px;
+      max-width: 100%;
+      font-weight: bold;
+    }
+    .c0126 {
+      text-transform: uppercase;
+    }
+    .c0127 {
+      width: 65px;
+      margin: 16px;
+      height: 65px;
+      flex-shrink: 0;
+    }
+    .c0128 {
+      margin: 28px 0;
+      font-size: 24px;
+      font-weight: 600;
+    }
+    .c0129 img {
+      margin-bottom: 24px;
+    }
+    @media (min-width: 768px) {
+      .c0121 {
+        top: 24px;
+        position: sticky;
+      }
+    }
+    </style><style data-jss="" data-meta="Component, Unthemed, Static">
+    .c011 {
+      display: flex;
+      position: relative;
+      min-height: 100vh;
+      padding-bottom: 56px;
+      flex-direction: column;
+    }
+</style><style data-jss="" data-meta="Component, Unthemed, Static">
+    .Forum {
+        position: relative;
+        left: 68px;
+        margin-left: 28px;
+        border: 1px solid #DDDDDD;
+        max-width: 289px;
+        margin: 12px 12px 12px 12px;
+    }
+
+
+    </style><link rel="canonical" href="https://preview.education.microsoft.com/hackingStem/lesson/3cqfrhc4" data-react-helmet="true"></head>
+    <body>
+        <div>
+            <div id="root"><div><div class="c011"><header class="c012 c013" data-auto-id="navbar"><div class="c014 c0111 container"><div class="c015"><div data-auto-id="navbarMicrosoftLink"><a class="c016" href="https://www.microsoft.com"><img class="c017" src="https://cdn.preview.education.microsoft.com/content/en-us/shared/MicrosoftLogo.png" alt="Microsoft"></a></div><div data-auto-id="navbarHomelink" class="c018"><a class="c019" href="/">Educator Center<sup class="c0110">Preview</sup></a></div></div>
+                <div class = "c015">
+                        <a href = C:\Users\t-keyen\Desktop\HackingSTEMHome.html>&nbsp;&nbsp;&nbsp;&nbsp;Hacking STEM Home&nbsp;&nbsp;&nbsp;&nbsp;</a>
+                        <a href = C:\Users\t-keyen\Desktop\Projectlibrary.html>&nbsp;&nbsp;&nbsp;&nbsp;Project Library&nbsp;&nbsp;&nbsp;&nbsp;</a>
+                        <a href = C:\Users\t-keyen\Desktop\Community.html>&nbsp;&nbsp;&nbsp;&nbsp;Community&nbsp;&nbsp;&nbsp;&nbsp;</a>
+                        <a href = C:\Users\t-keyen\Desktop\ContactHackingSTEM.html>&nbsp;&nbsp;&nbsp;&nbsp;Contact Hacking STEM&nbsp;&nbsp;&nbsp;&nbsp;</a>
+                        
+                    </div> 
+            <a data-auto-id="navbarSignIn" class="c015" href="/login">Sign In</a></div></header><div data-auto-id="hacking-stem-lesson" aria-label="Designing Astro Socks to protect astronauts’ feet in microgravity" role="main"><section class="c0132 m-hero-item f-x-left f-y-center context-accessory f-mask-100"><div class="c0141 m-ambient-video"><video autoplay="" loop=""><source src="https://cdn.preview.education.microsoft.com/content/en-us/hackingStem/lessons/3cqfrhc4/astrosocks_hero_768x370.mp4"></video></div><div data-auto-id="hero-content" class="c0139 c0111 container"><div class="c0140 row"><h1 data-auto-id="hero-title" data-hero-title="Designing Astro Socks to protect astronauts’ feet in microgravity" class="c0135" title="Designing Astro Socks to protect astronauts’ feet in microgravity">Designing Astro Socks to protect astronauts’ feet in microgravity</h1><div><div class="c0143 c-group"><span class="c0144 c-glyph"><img class="c0142 f-image" alt="" src="https://cdn.preview.education.microsoft.com/content/en-us/shared/ms.png"></span><span class="c0145"> By: Microsoft Education &amp; NASA | <span class="c0146">Lesson Plan</span></span></div><div data-auto-id="hero-action-container"><a class="c0149 c-call-to-action c-glyph" href="https://aka.ms/astrosocks-LP/en-us" rel="noopener noreferrer" target="_blank"><span class="c0131">Middle &amp; High School lesson</span><span class="c0130">Lesson Plan</span></a></div></div></div></div></section><div class="c0120 c0111 container"><div class="row"><div class="order-1 col-lg-4 order-lg-2 offset-lg-1"><div class="c0121"><h2 class="c0123">Teacher resources</h2><div class="c0124"><img class="c0127" alt="Designing Astro Socks to protect astronauts’ feet in microgravity" src="https://cdn.preview.education.microsoft.com/content/en-us/hackingStem/lessons/3cqfrhc4/icon.png"><div class="c0122"><h3 class="c0125">Middle &amp; High School Lesson Materials</h3><a class="c0126 c-call-to-action c-glyph f-lightweight" href="https://aka.ms/astrosocks-instructions/en-us" rel="noopener noreferrer" target="_blank">Build Instructions</a><a class="c0126 c-call-to-action c-glyph f-lightweight" href="https://aka.ms/astrosocks-workbook" rel="noopener noreferrer" target="_blank">Excel Workbook</a><a class="c0126 c-call-to-action c-glyph f-lightweight" href="https://aka.ms/astrosocks-materials/en-us" rel="noopener noreferrer" target="_blank">Materials List</a><a class="c0126 c-call-to-action c-glyph f-lightweight" href="https://aka.ms/astrosocks-code" rel="noopener noreferrer" target="_blank">Board Code</a></div></div></div></div><div class="c0129 order-2 col-lg-7 order-lg-1"><div><h2 class="c0155">Lesson description</h2><div class="c0156"><div class="c0157"><i class="c0158 c0159" aria-hidden="true"></i><span data-auto-id="content-duration"><b><span>Duration:</span></b> <span>5, 50-min. periods</span></span></div><div class="c0157"><i class="c0158 c0162" aria-hidden="true"></i><span><b><span>Grade:</span></b> <span>6-12th, 10-18 years</span></span></div><div class="c0157"><i class="c0158 c0161" aria-hidden="true"></i><span><b><span>Cost:</span></b> ~$2.00/student*</span></div><span class="c0163"><span>*cost excluding tools &amp; microcontroller</span></span></div><div class="c0165"><div class="c0164 c0154">In space, the astronauts’ feet are like hands. They use them to grip and grasp surfaces to stabilize themselves in microgravity. This often leads to discomfort on the tops of their feet. In this lesson students study the tasks that astronauts perform while on the International Space Station. They evaluate designs of performance footwear, gather user requirements and study foot anatomy. Then, they design and build a prototype to mitigate the pressure on their feet. By running trials using their sensorized sock, they test the effectiveness of their design in a simulated microgravity environment. Finally, they write and record an advertisement to explain their design.</div><div class="c0164 c0154"><b>Materials developed in partnership with the <a href="https://www.nasa.gov/stemonstation" target="_blank">NASA STEM on Station</a> team.</b></div><div class="c0164"><div class="c0168"><iframe class="c0169" title="Designing Astro Socks to protect astronauts’ feet in microgravity" src="https://www.youtube-nocookie.com/embed/PVFpxYsJhi8?showinfo=0&amp;rel=0" frameborder="0" allowfullscreen=""></iframe></div></div><div class="c0164 c0154"><h2>Special thanks to our 2018 Hackathon participants</h2></div><div class="c0164 c0154">This lesson builds upon the work done by Isabelle Starr, a student from the Lake Washington School District and Jason Huff, an educator from Seattle Public Schools. During the 2018 Microsoft OneWeek Hackathon they partnered with a team of Microsoft employees to develop a prototype of the sensor and the Excel workbook to measure foot pressure. Their work provided the foundation for the Astro Socks project which was developed by the Hacking STEM and NASA Stem on Station teams.</div><img class="c0166" src="https://cdn.preview.education.microsoft.com/content/en-us/hackingStem/lessons/3cqfrhc4/DSC04295.jpg" alt="A photo of the 2018 Hackathon participants"></div></div><h2 class="c0128">Software requirements</h2><div class="row"><div class="col-12 col-md-6"><div class="c0170"><img class="c0172" title="Data Streamer" src="https://cdn.preview.education.microsoft.com/content/en-us/hackingStem/software/data_streamer/icon.png" alt="Data Streamer"><div><h3 class="c0171">Data Streamer</h3><p>Modernize your existing copy of Microsoft Excel to support real-time data streaming in customized workbooks.</p><a class="c0173 c-call-to-action c-glyph f-lightweight" href="https://aka.ms/data-streamer" rel="noopener noreferrer" target="_blank">Learn more</a></div></div></div><div class="col-12 col-md-6"><div class="c0170"><img class="c0172" title="Excel O365 Desktop" src="https://cdn.preview.education.microsoft.com/content/en-us/hackingStem/software/excel/icon.png" alt="Excel O365 Desktop"><div><h3 class="c0171">Excel O365 Desktop</h3><p>Students and teachers are eligible for free Office 365 Education, which includes online Word, Excel, PowerPoint, and OneNote.</p><a class="c0173 c-call-to-action c-glyph f-lightweight" href="https://www.microsoft.com/en-us/education/products/office/default.aspx" rel="noopener noreferrer" target="_blank">Learn more</a></div></div></div><div class="col-12 col-md-6"><div class="c0170"><img class="c0172" title="Windows 10" src="https://cdn.preview.education.microsoft.com/content/en-us/hackingStem/software/windows10/icon.png" alt="Windows 10"><div><h3 class="c0171">Windows 10</h3><p>This project requires a PC running Windows 10. To update your version of Windows,</p><a class="c0173 c-call-to-action c-glyph f-lightweight" href="https://www.microsoft.com/en-us/education/Products/Windows/default.aspx" rel="noopener noreferrer" target="_blank">Learn more</a></div></div></div></div></div></div></div></div> 
+
+            <div class = "Forum"><h1>Have a Question?</h1>
+              <a>Visit our Forum!</a></div>
+
+            <div><footer class="c0116"><div class="c0117 c0111 container"><a href="https://support.microsoft.com/contactus/" class="c0118 c0119">Contact us</a><a href="https://privacy.microsoft.com/PrivacyStatement" class="c0118 c0119">Privacy &amp; cookies</a><a href="https://www.microsoft.com/servicesagreement/" class="c0118 c0119">Terms of use</a><span class="c0118">© Microsoft 2019</span></div></footer></div></div></div>
+        </div></div>
+    
+
+        <script type="text/javascript">
+            var sessionInfo = {"isSignedIn":false,"userData":null,"cdnUrl":"https://cdn.preview.education.microsoft.com","mecUrl":null,"correlationVector":"e1xyC2xQs0aIF+mhZ7UGnA.1","csrfToken":null,"browserLocale":"en-us"};
+            
+            var appSettings = {
+                ariaIngestionKey: '0464b426f699433694ab827c99f28c2c-a7241377-2c58-4414-a180-75329c47783a-7042'
+            };
+    
+            var flights= {"BRS_UseCDNFiles":true,"BRS_StoreProgressAndWait":true,"BRS_AcceptCourseCompletion":true,"BRS_ShowTranscripts":true,"BRS_HackingStem":true,"BRS_LogSQLQueries":false,"BRS_IncludeMecCurrentBadges":true,"ContentBlacklist":["054e2152","3805ac82","46b3faaa","494374a4","ac180d71","ae8d3f8c","d12632e9","dd803e65","ec92c746","3f593976","42ebef72","d4f6745b","a783c508","bce6c0ff","d9e0a1a9","5b35c9b0","0b39dada","220b5d40","b1485a4b","20c5ad0a","813f30f1","09bfcf4a","658ed196","dab2127d","beb9828a","68f70f44","0a60eeb6","24247e05","268298dc","57ad1972","6ce25a78","80726276","87f97b1b","aa4bb88b","ad1b5fd9","cd84b9ee","5f4d7eca","4556eeca","2a12fbbd","a7f6be37","9c599359","30a7b5e8","c3c376f8","5fed9211","2e1ab428","e9e4e6f7","72e5bfbf"]};
+    
+            var buildInfo = {
+                buildVersion: 'master_20190729.2'
+            };
+    
+            var homepageData = {"title":"Microsoft Educator Centre Preview","subTitle":"Welcome to the first courses available in your updated Microsoft Educator Centre. Explore new concepts and develop skills while you earn professional development credit.","heroes":[{"title":"Welcome","subTitle":"Learn and explore with training and resources, and earn badges and certificates on a personalized hub created for educators like you.","iconPath":null,"heroPaths":{"xl":"training_1600x600.jpg","l":"training_1259x472.jpg","m":"training_1083x609.jpg","s":"training_767x431.jpg","xs":"training_539x303.jpg"},"callToAction":null,"isDark":true}],"banner":{"title":"Hacking Stem","subTitle":"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat","heroPaths":{"xl":"https://cdn.preview.education.microsoft.com/content/en-us/courses/77478dfd/hero_539x303.jpg","l":"https://cdn.preview.education.microsoft.com/content/en-us/courses/77478dfd/hero_767x431.jpg","m":"https://cdn.preview.education.microsoft.com/content/en-us/courses/77478dfd/hero_1083x609.jpg","s":"https://cdn.preview.education.microsoft.com/content/en-us/courses/77478dfd/hero_1259x472.jpg","xs":"https://cdn.preview.education.microsoft.com/content/en-us/courses/77478dfd/hero_1600x600.jpg"},"link":{"text":"link 1234","target":"/course/206fcd47/overview"},"isShowBanner":false},"modules":null,"actionItems":[{"icon":"coursesIcon","imagePath":null,"title":"Explore courses","text":"Learn how to use Microsoft technology in your classroom in effective and engaging ways while also earning professional development hours.","link":{"text":"Browse courses","target":"/courses"}},{"icon":"learningPathsIcon","imagePath":null,"title":"Explore learning paths","text":"Focus on skill development or master Microsoft products in a learning path, a collection of courses for deeper learning in a topic.","link":{"text":"Browse learning paths","target":"/learningPaths"}},{"icon":"achievementsIcon","imagePath":null,"title":"View your achievements","text":"See the badges and points you've earned in your profile. You can also share your training transcript to document your learning to others.","link":{"text":"View my profile","target":"/profile"}},{"icon":"connectIcon","imagePath":null,"title":"Connect with Microsoft EDU","text":"Keep up with the latest training and resources. Subscribe to the MEC newsletter to stay in the know.","link":{"text":"See what's new with Microsoft EDU","target":"https://education.microsoft.com/Start/UserCommunicationPreference"}}],"featuredContent":{"newAndNoteworthy":[{"id":"23b7f02f","type":"course"},{"id":"87c99804","type":"course"},{"id":"ac59d6bc","type":"course"},{"id":"c04cb8b0","type":"course"},{"id":"b205eb8c","type":"course"},{"id":"4962d5dc","type":"course"}],"learningPaths":[{"id":"dc32e990","type":"learningpath"},{"id":"b6e3b5f2","type":"learningpath"},{"id":"c9926cff","type":"learningpath"},{"id":"1ce2977c","type":"learningpath"},{"id":"e9a3beec","type":"learningpath"},{"id":"15c0f683","type":"learningpath"}]},"mosaics":[{"id":"home_mosaic","tiles":[{"id":"1","heading":"Partnering with NASA STEM on Station","subheading":"Microsoft Education in partnership with NASA have developed this collection of lesson plans to celebrate the astronauts’ contributions to improving life both in space and on Earth.","links":[{"text":"VIEW LESSON PLANS","target":"hackingStem"}],"tiles":null,"width":"half","height":"large","background":"f-background-neutral-75","imagePath":"pages/homepage/mosaic_iss2.jpg","hasOverlay":true},{"id":"2","heading":"Student Centered Learning","subheading":"Support the success of your students with tools and resources to help them be their best selves, share their voice, and collaborate.","links":[{"text":"INCLUSIVE CLASSROOM","target":"learningPath/ab56bd49"},{"text":"VOICE AND COLLABORATION","target":"learningPath/18793af1"}],"tiles":null,"width":"half","height":"medium","background":"f-background-neutral-80","imagePath":null,"hasOverlay":false},{"id":"3","heading":null,"subheading":null,"links":null,"tiles":[{"id":"2-1","heading":"Skype in the Classroom","subheading":"Skype in the Classroom is a free community that offers live transformative educational experiences for students including Virtual Field Trips, talks from Guest Speakers, classroom to classroom connections, and live collaboration projects.","links":[{"text":"EXPLORE ACTIVITIES","target":"https://education.microsoft.com/skype-in-the-classroom/overview"}],"tiles":null,"width":"quarter","height":"medium","background":"f-background-accent","imagePath":null,"hasOverlay":false},{"id":"2-2","heading":null,"subheading":null,"links":null,"tiles":null,"width":"quarter","height":"medium","background":"f-background-neutral-75","imagePath":"pages/homepage/mosaic_student.png","hasOverlay":false}],"width":"half","height":null,"background":null,"imagePath":null,"hasOverlay":false}]}],"id":"homepage","isTestData":null};
+        </script>
+    
+        <script src="https://cdn.preview.education.microsoft.com/dist/public/20190729.2/vendors.b83a606d1830e50cdbd1.js"></script>
+    
+    
+    
+    </body></html>
