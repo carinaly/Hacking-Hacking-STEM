@@ -376,7 +376,10 @@
   .c0171 {
     font-size: 64px;
     text-align: center;
+  
+     
   }
+  
   .c0172 {
     font-style: normal;
     font-family: MWF-MDL2;
@@ -441,6 +444,8 @@
     margin: 0 0 24px 0 !important;
     overflow: hidden;
     margin-bottom: 0 !important;
+    text-align: center; 
+    object-position: center; 
   }
   .c0180 {
     display: block;
@@ -526,14 +531,14 @@
     overflow-x: hidden;
   }
   .c0142 {
-    color: #0067b8 !important;
+    color: #FFFFFF !important;
     border: 2px solid transparent;
     display: inline-flex;
     font-weight: 500;
     line-height: 28px;
-    margin-left: 16px;
-    padding-top: 0;
-    background-color: transparent;
+    margin-left: 0px;
+    padding: 8  16 8 16;
+    background-color: #2c82c0;
   }
   .c0142:hover, .c0142:focus {
     text-decoration: underline;
