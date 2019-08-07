@@ -668,7 +668,7 @@
                    <input type="text" id="Review-Title" placeholder="Title (5 words or less)"/>
                 </div>
                 <div>
-                    <input type="text" id="ReviewInput" style= "margin-top:15px" placeholder="Talk about your experience"/>
+                    <textarea type="text" id="ReviewInput" style= "margin-top:15px" placeholder="Talk about your experience"></textarea>
                 </div>
                 <button id="submitButton" onclick="AddComment();" class="c0149 c-call-to-action c-glyph" style="margin-top: 15px; float:right; width:150px; text-align:center; color: #ffffff">
                         <span class="c0131">Submit</span>
@@ -676,13 +676,13 @@
 
                 <br/>
                 <br/>
-                <br/>
-                <br/>
+
                 <h2 class ="c0155">All Reviews</h2>
             <!--Comments-->        
-                    <div class="review" id="template" style="display:none">
+                    <div class="review" id="template" span hidden>
                     <div style="position:relative; margin: 0px 12px 12px 12px; left:85px">
                      <div id=accountInfo width="50" style="display: inline-block;">
+                      <br/>
                         <img id=ProfilePicture src="{imageSource}" width="50" style="align-content: center"/>
                         <br/>
                         <div id=NameAndLocation width="50" style="display: inline-block; text-align:center"> 
