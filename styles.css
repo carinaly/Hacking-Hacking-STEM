@@ -210,6 +210,26 @@
       font-size: 34px;
     }
   }
+  .colmenu{
+    width: 25%; 
+    float: left; 
+  }
+  .colforum{
+    width: 70%; 
+    float: right; 
+  }
+
+  .cbutoon{
+    font-size: 24; 
+    Background: #C9C9C9; 
+    padding: 15px 30px 15px 30px; 
+    text-align: center; 
+    margin: 10px 10px 10px 10px; 
+    line-height: 100px; 
+    border-bottom-style:  solid; 
+  }
+  
+
   @media (max-width: 575.8px) {
     .c0127 {
       font-size: 22px;
