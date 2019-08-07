@@ -213,20 +213,53 @@
   .colmenu{
     width: 25%; 
     float: left; 
+    text-align: center;
   }
   .colforum{
     width: 70%; 
     float: right; 
   }
 
-  .cbutoon{
+  .cbutoon3{
     font-size: 24; 
-    Background: #C9C9C9; 
-    padding: 15px 30px 15px 30px; 
+    Background:#FFFFFF; 
+    padding: 20px 25px  20px 25px; 
+    margin: auto; 
+    
     text-align: center; 
-    margin: 10px 10px 10px 10px; 
+    margin: 10px 10px 30px 10px; 
     line-height: 100px; 
-    border-bottom-style:  solid; 
+    
+  }.cbutoon2{
+    font-size: 24; 
+    Background:#FFFFFF; 
+    padding: 20px 74px  20px 74px; 
+    margin: auto; 
+    
+    text-align: center; 
+    margin: 10px 10px 30px 10px; 
+    line-height: 100px; 
+    
+  }
+  .cbutoon2:hover{
+    text-decoration: underline;
+  }
+  .cbutoon3:hover{
+    text-decoration: underline; 
+  }
+  .cbutoon1:hover{
+    text-decoration: underline; 
+  }
+  .cbutoon1{
+    font-size: 24; 
+    Background:#FFFFFF; 
+    padding: 20px 48px  20px 48px; 
+    margin: auto; 
+    
+    text-align: center; 
+    margin: 10px 10px 30px 10px; 
+    line-height: 100px; 
+    
   }
   
 
@@ -278,7 +311,7 @@
     flex-direction: column;
     justify-content: center;
   }
-  .c0150 {
+  .c0250 {
     color: #FFFFFF;
     border: 2px solid transparent;
     font-size: 13px;
