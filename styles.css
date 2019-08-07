@@ -216,8 +216,9 @@
     text-align: center;
   }
   .colforum{
-    width: 70%; 
+    width: 73%; 
     float: right; 
+    
   }
 
   .cbutoon3{
@@ -260,6 +261,27 @@
     margin: 10px 10px 30px 10px; 
     line-height: 100px; 
     
+  }
+  .rowforum{
+    height: 230px;
+    margin: 10px 100px 10px 10px; 
+    padding: 10px; 
+     
+   
+  }
+  .colforumcard{
+    height: 170px; 
+    Width: 270px; 
+    margin: 20px; 
+    float: left; 
+    background:#DDDDDD;
+  }
+  .imgcard{
+    height: 120px; 
+    width:270px; 
+  }
+  .forumname{
+    margin: 5px; 
   }
   
 
