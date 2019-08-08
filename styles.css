@@ -214,11 +214,37 @@
     width: 25%; 
     float: left; 
     text-align: center;
+    margin-bottom: 100px; 
+   
   }
   .colforum{
-    width: 73%; 
+    width: 70%; 
     float: right; 
+    margin-bottom: 100px; 
     
+  }
+  .act{
+    float:center; 
+    background:#DDDDDD;
+    margin: auto;
+    margin-top: 60px;  
+    height:700px; 
+    width:400px; 
+    padding: 10px;
+
+  }
+  .hithere{
+    float: left; 
+    margin:15px 15px 0 15px; 
+  }
+  .actrow{
+    margin:10px; 
+    border-bottom: solid;
+    float: left;  
+
+  }
+  .actrowhead{
+    margin:10px; 
   }
 
   .cbutoon3{
@@ -643,11 +669,13 @@
     background: #F2F2F2;
     letter-spacing: -0.04em;
    
+   
   }
 
   .c0117 {
     display: flex;
     flex-wrap: wrap;
+    
     
   }
   .c0118 {
