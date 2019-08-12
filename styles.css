@@ -210,6 +210,107 @@
       font-size: 34px;
     }
   }
+  .colmenu{
+    width: 25%; 
+    float: left; 
+    text-align: center;
+    margin-bottom: 100px; 
+   
+  }
+  .colforum{
+    width: 70%; 
+    float: right; 
+    margin-bottom: 100px; 
+    
+  }
+  .act{
+    float:center; 
+    background:#DDDDDD;
+    margin: auto;
+    margin-top: 60px;  
+    height:700px; 
+    width:400px; 
+    padding: 10px;
+
+  }
+  .hithere{
+    float: left; 
+    margin:15px 15px 0 15px; 
+  }
+  .actrow{
+    margin:10px; 
+    border-bottom: solid;
+    float: left;  
+
+  }
+  .actrowhead{
+    margin:10px; 
+  }
+
+  .cbutoon3{
+    font-size: 24; 
+    Background:#FFFFFF; 
+    padding: 20px 25px  20px 25px; 
+    margin: auto; 
+    
+    text-align: center; 
+    margin: 10px 10px 30px 10px; 
+    line-height: 100px; 
+    
+  }.cbutoon2{
+    font-size: 24; 
+    Background:#FFFFFF; 
+    padding: 20px 74px  20px 74px; 
+    margin: auto; 
+    
+    text-align: center; 
+    margin: 10px 10px 30px 10px; 
+    line-height: 100px; 
+    
+  }
+  .cbutoon2:hover{
+    text-decoration: underline;
+  }
+  .cbutoon3:hover{
+    text-decoration: underline; 
+  }
+  .cbutoon1:hover{
+    text-decoration: underline; 
+  }
+  .cbutoon1{
+    font-size: 24; 
+    Background:#FFFFFF; 
+    padding: 20px 48px  20px 48px; 
+    margin: auto; 
+    
+    text-align: center; 
+    margin: 10px 10px 30px 10px; 
+    line-height: 100px; 
+    
+  }
+  .rowforum{
+    height: 230px;
+    margin: 10px 100px 10px 10px; 
+    padding: 10px; 
+     
+   
+  }
+  .colforumcard{
+    height: 170px; 
+    Width: 270px; 
+    margin: 20px; 
+    float: left; 
+    background:#DDDDDD;
+  }
+  .imgcard{
+    height: 120px; 
+    width:270px; 
+  }
+  .forumname{
+    margin: 5px; 
+  }
+  
+
   @media (max-width: 575.8px) {
     .c0127 {
       font-size: 22px;
@@ -258,7 +359,7 @@
     flex-direction: column;
     justify-content: center;
   }
-  .c0150 {
+  .c0250 {
     color: #FFFFFF;
     border: 2px solid transparent;
     font-size: 13px;
@@ -568,11 +669,13 @@
     background: #F2F2F2;
     letter-spacing: -0.04em;
    
+   
   }
 
   .c0117 {
     display: flex;
     flex-wrap: wrap;
+    
     
   }
   .c0118 {
