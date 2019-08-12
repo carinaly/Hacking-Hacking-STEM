@@ -1,12 +1,11 @@
 const mysql = require('mysql'); 
 
 const config = {
-    host: 'localhost',
-    user: 'root',
+    host: 'localhost', 
+    user: 'root', 
     password: 'root', 
-    database: 'api', 
+    database: 'discussions', 
 }
 
 const pool = mysql.createPool(config); 
-
 module.exports = pool; 
