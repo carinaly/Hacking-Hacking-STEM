@@ -7,17 +7,31 @@ const router = app => {
         })
     })
 
-    app.get('/users', (request,response) => {
-         pool.query('SELECT * FROM users', (error,result) => {
+    app.get('/forums', (request,response) => {
+         pool.query('SELECT * FROM forums', (error,result) => {
             if (error) throw error; 
             response.send(result); 
         })
     })
+    app.get('/discussions', (request,response) => {
+        pool.query('SELECT * FROM discussions', (error,result) => {
+           if (error) throw error; 
+           response.send(result); 
+       })
+   })
+   
+   app.get('/replies', (request,response) => {
+    pool.query('SELECT * FROM replies', (error,result) => {
+       if (error) throw error; 
+       response.send(result); 
+   })
+})
+
     
 
-    app.get('/users/:id', (request, response)=>{
+    app.get('/forums/:id', (request, response)=>{
         const id = request.params.id; 
-         pool.query('SELECT * FROM users WHERE id = ?', id, (error, result) =>{
+         pool.query('SELECT * FROM forums WHERE id = ?', id, (error, result) =>{
             if (error) throw error; 
 
             response.send(result); 
@@ -25,8 +39,8 @@ const router = app => {
 
     })
 
-    app.post('/users', (request, response)=>{
-        pool.query('INSERT INTO users SET ?', request.body, (error, result)=>{
+    app.post('/forums', (request, response)=>{
+        pool.query('INSERT INTO forums SET ?', request.body, (error, result)=>{
             if (error) throw error; 
 
             response.status(201).send(`User added with ID: ${result.insertId}`); 
@@ -34,9 +48,9 @@ const router = app => {
 
     })
 
-    app.put('/users/:id', (request, response) => {
+    app.put('/forums/:id', (request, response) => {
         const id = request.params.id; 
-        pool.query('UPDATE users SET ? WHERE id = ?', [request.body, id], (error, response) => {
+        pool.query('UPDATE forums SET ? WHERE id = ?', [request.body, id], (error, response) => {
             if (error) throw error; 
 
             response.send('User updated succesfully.'); 
@@ -45,10 +59,10 @@ const router = app => {
     })
 
     // Delete a user
-    app.delete('/users/:id', (request, response) => {
+    app.delete('/forums/:id', (request, response) => {
         const id = request.params.id;
     
-        pool.query('DELETE FROM users WHERE id = ?', id, (error, result) => {
+        pool.query('DELETE FROM forums WHERE id = ?', id, (error, result) => {
             if (error) throw error;
     
             response.send('User deleted.');
