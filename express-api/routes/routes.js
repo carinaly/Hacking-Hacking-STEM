@@ -29,15 +29,33 @@ const router = app => {
 
     
 
-    app.get('/forums/:id', (request, response)=>{
-        const id = request.params.id; 
-         pool.query('SELECT * FROM forums WHERE id = ?', id, (error, result) =>{
-            if (error) throw error; 
+app.get('/forums/:id', (request, response)=>{
+    const id = request.params.id; 
+     pool.query('SELECT * FROM forums WHERE id = ?', id, (error, result) =>{
+        if (error) throw error; 
 
-            response.send(result); 
-        })
-
+        response.send(result); 
     })
+
+})
+app.get('/discussions/:id', (request, response)=>{
+    const id = request.params.id; 
+     pool.query('SELECT * FROM discussions WHERE id = ?', id, (error, result) =>{
+        if (error) throw error; 
+
+        response.send(result); 
+    })
+
+})
+app.get('/replies/:id', (request, response)=>{
+    const id = request.params.id; 
+     pool.query('SELECT * FROM replies WHERE id = ?', id, (error, result) =>{
+        if (error) throw error; 
+
+        response.send(result); 
+    })
+
+})
 
     app.post('/forums', (request, response)=>{
         pool.query('INSERT INTO forums SET ?', request.body, (error, result)=>{
