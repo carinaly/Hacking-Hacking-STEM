@@ -533,6 +533,7 @@
     <link rel="canonical" href="https://preview.education.microsoft.com/hackingStem/lesson/3cqfrhc4" data-react-helmet="true">
     <script>
             function AddReview(){
+              var Response = document.getElementById('input');
               var ResponseContent = document.getElementById('ResponseInput').value;
               console.log(ResponseContent);
           
@@ -541,7 +542,8 @@
                     .replace("{imageSource}", "https://cdn.pixabay.com/photo/2017/06/13/12/53/profile-2398782_960_720.png")
                     .replace("{Text}", ResponseContent);
           
-              document.body.insertAdjacentHTML('beforeend', finalHtml);
+              //document.body.insertAdjacentHTML('beforeend', finalHtml);//
+              Response.insertAdjacentHTML('afterbegin', finalHtml);
           }
           </script>
     </head>
@@ -582,11 +584,22 @@
         <br/>
         <img src="https://cdn4.iconfinder.com/data/icons/basic-user-interface-elements/700/left-arrow-back-256.png" style="width:20px; height:20px; margin-left:40px"/>
         <br/>
-        <h1 class="discussionTitle" style="margin-left:10%; max-width:60%">Why doesn't my sensorized finger move on my hand?</h1>
+        <h1 class="discussionTitle" style="margin-left:10%; max-width:60%">Why doesn't my sensorized finger move on my hand?</h1> 
+        <br/> 
+                        <div id="userInput" style="display: inline-block;">
+                                <img id=ProfilePicture src="https://cdn.pixabay.com/photo/2017/06/13/12/53/profile-2398782_960_720.png" width="50" style="align-content: center; margin-left: 10%; margin-bottom: 20px"/>
+                                <div id=NameAndLocation width="50" style="display: inline-block; text-align:center; margin-top:10px">
+                                        Name<br/>Date Posted
+                                    </div>
+                                </div>
+                        <div style="height: 1px; background-color: #707070; display: inline-block; vertical-align: top; width: 50%; margin-left:10%; margin-top: 0px; "></div>
+                                <br/>
+        <br/>
 
                     
                         <!--Comments-->
                         <div class="response"> 
+                            <div id="input">
                                 <h5 style="margin-top:7px">Add a Response</h5>
                                 
                                 <div>
@@ -595,22 +608,23 @@
                                 <button id="submitButton" onclick="AddReview();" class="c0149 c-call-to-action c-glyph" style="margin-right:18%; margin-top:15px; float:right; width:150px; text-align:center; color: #ffffff">
                                         <span class="c0131">Submit</span>
                                 </button>
+                            </div>
                 
-                                <br/>
-                                <br/>
+                                
 
                                 <div class="review" id="template" style="display:none">
-                                    <div style="position:relative; margin: 0px 12px 12px 10%">
-                                    <div id=accountInfo width="50" style="display: inline-block;">
+                                    <div style="margin: 0px 12px 12px 10px">
+                                    <div id=accountInfo width="90" style="display: inline-block;">
                                     <br/>
-                                        <img id=ProfilePicture src="{imageSource}" width="50" style="align-content: center"/>
+                                        <img id=ProfilePicture src="{imageSource}" width="50" style="margin-left:20px; align-content:center"/>
                                         <br/>
-                                        <div id=NameAndLocation width="50" style="display: inline-block; text-align:center"> 
-                                            Name<br/>Location
+                                        <div id=Name width="50" margin-top="15px" text-align ="center" style="display: inline-block; text-align:center"> 
+                                            Terry Crew
                                         </div>
                                     </div>
                                     <div style="width: 1px; background-color: #707070; display: inline-block; vertical-align: top; height: 130px; margin-left: 15px; margin-right: 15px;">&nbsp;</div>
                                      <div id=ReviewResult style="display: inline-block; vertical-align:top">{Text}</div>
+                                     <br/>
                                     </div>
                             </div>
                     
