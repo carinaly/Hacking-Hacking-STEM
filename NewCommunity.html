@@ -116,59 +116,68 @@
                     <div class="c0131 c0111 container">
                         <div class="colmenu">
                             <div class="menu">
+                                <h3>Find a Discussion</h3>
                                 <div class="dropdown">
                                     <div class="sidenav"></div>
 
-                                    <svg height="3" width="315">
-                                        <line x1="0" y1="0" x2="315" y2="0" style="stroke:#888888;stroke-width:2;" />
+                                    <svg height="3" width="345">
+                                        <line x1="0" y1="0" x2="345" y2="0" style="stroke:#888888;stroke-width:2;" />
                                     </svg>
 
                                     <button class="dropdown-btn">Your Discussions
-                                        <i class="fa fa-caret-down"></i>
+                                            <i class="arrow right"></i>
                                     </button>
+                                    
                                     <div class="dropdown-container">
-                                        <a class=droptexts href="#">Link 1</a><br>
-                                        <a class=droptexts href="#">Link 2</a><br>
-                                        <a class=droptexts href="#">Link 3</a><br>
+                                        <input class = forumsearch type= "text" placeholder = "Search">
+                                        <a forumid = 3 class=droptexts href="#">DataStreamer</a><br>
+                                        <a forumid = 4 class=droptexts href="#">Lemon battery</a><br>
+                                        <a forumid = 1 class=droptexts href="#">Robotic hand</a><br>
                                     </div>
 
-
-
-                                    <svg height="3" width="315">
-                                        <line x1="0" y1="0" x2="315" y2="0" style="stroke:#888888;stroke-width:2;" />
+                                    <svg height="3" width="345">
+                                        <line x1="0" y1="0" x2="345" y2="0" style="stroke:#888888;stroke-width:2;" />
                                     </svg>
 
                                     <button class="dropdown-btn">Projects
-                                        <i class="fa fa-caret-down"></i>
+                                        <i class="arrow right"></i>
                                     </button>
                                     <div class="dropdown-container">
-                                        <a class=droptexts href="#">Link 1</a><br>
-                                        <a class=droptexts href="#">Link 2</a><br>
-                                        <a class=droptexts href="#">Link 3</a><br>
+                                        <input class = forumsearch type= "text" placeholder = "Search">
+                                        <a forumid = 2 class=droptexts href="#">Astrosocks</a><br>
+                                        <a forumid = 1 class=droptexts href="#">Robotic hand</a><br>   
+                                        <a forumid = 5 class=droptexts href="#">Tuned Mass Damper</a><br>
+                                        <a forumid = 4 class=droptexts href="#">Lemon Battery</a><br>
+                                        <a forumid = 8 class=droptexts href="#">Wave Machine</a><br>
+                                        <a forumid = 9 class=droptexts href="#">Brain gong</a><br>
+                                        <a forumid = 13 class=droptexts href="#">Windmill</a><br>
                                     </div>
-                                    <svg height="3" width="315">
-                                        <line x1="0" y1="0" x2="315" y2="0" style="stroke:#888888;stroke-width:2;" />
+                                    <svg height="3" width="345">
+                                        <line x1="0" y1="0" x2="345" y2="0" style="stroke:#888888;stroke-width:2;" />
                                     </svg>
 
                                     <button class="dropdown-btn">Technology
-                                        <i class="fa fa-caret-down"></i>
+                                        <i class="arrow right"></i>
                                     </button>
                                     <div class="dropdown-container">
-                                        <a class=droptexts href="#">Link 1</a><br>
-                                        <a class=droptexts href="#">Link 2</a><br>
-                                        <a class=droptexts href="#">Link 3</a><br>
+                                         <input class = forumsearch type= "text" placeholder = "Search">
+                                        <a forumid = 3 class=droptexts href="#">DataStreamer</a><br>
+                                        <a forumid = 10 class=droptexts href="#">Micro:bit</a><br>
+                                      
                                     </div>
-                                    <svg height="3" width="315">
-                                        <line x1="0" y1="0" x2="315" y2="0" style="stroke:#888888;stroke-width:2;" />
+                                    <svg height="3" width="345">
+                                        <line x1="0" y1="0" x2="345" y2="0" style="stroke:#888888;stroke-width:2;" />
                                     </svg>
 
-                                    <button class="dropdown-btn">Dropdowns
-                                        <i class="fa fa-caret-down"></i>
+                                    <button class="dropdown-btn">General
+                                        <i class="arrow right"></i>
                                     </button>
                                     <div class="dropdown-container">
-                                        <a class=droptexts href="#">Link 1</a><br>
-                                        <a class=droptexts href="#">Link 2</a><br>
-                                        <a class=droptexts href="#">Link 3</a><br>
+                                        <input class = forumsearch type= "text" placeholder = "Search">
+                                        <a forumid = 6 class=droptexts href="#">Renewable Energy</a><br>
+                                        <a forumid = 7 class=droptexts href="#">Elementary</a><br>
+                                        <a forumid = 11 class=droptexts href="#">High School</a><br>
+                                        <a forumid = 12 class=droptexts href="#">Orbies</a><br>
                                     </div>
 
 
@@ -188,6 +197,11 @@
                                                 }
                                             });
                                         }
+
+                                        function validate() {
+                                            alert(Date.now());
+                                            document.getElementById('date').value = Date.now();
+                                        }
                                     </script>
                                 </div>
 
@@ -196,131 +210,17 @@
                         </div>
                         <div class="colforum">
 
-                            <h4>Your Forums</h4>
-                            <div class="rowforum">
-                                <a href="exampleforum.html">
-                                    <div class="colforumcard">
-                                        <img href="exampleforum.html" class="imgcard"
-                                            src="https://images.unsplash.com/photo-1515344905723-babc01aac23d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&w=1000&q=80"
-                                            alt="windmill picture">
-                                        <h6 class="forumname" href="exampleforum.html">Forum name</h6>
-
-                                    </div>
-                                </a>
-                                <a href="exampleforum.html">
-                                    <div class="colforumcard">
-                                        <img href="exampleforum.html" class="imgcard"
-                                            src="https://images.unsplash.com/photo-1515344905723-babc01aac23d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&w=1000&q=80"
-                                            alt="windmill picture">
-                                        <h6 class="forumname" href="exampleforum.html">Forum name</h6>
-
-
-                                    </div>
-                                </a>
-                                <a href="exampleforum.html">
-                                    <div class="colforumcard">
-                                        <img href="exampleforum.html" class="imgcard"
-                                            src="https://images.unsplash.com/photo-1515344905723-babc01aac23d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&w=1000&q=80"
-                                            alt="windmill picture">
-                                        <h6 class="forumname" href="exampleforum.html">Forum name</h6>
-
-                                    </div>
-                                </a>
-
-
-
-
-                            </div>
-                            <div class="rowforum">
-                                <a href="exampleforum.html">
-                                    <div class="colforumcard">
-                                        <img href="exampleforum.html" class="imgcard"
-                                            src="https://images.unsplash.com/photo-1515344905723-babc01aac23d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&w=1000&q=80"
-                                            alt="windmill picture">
-                                        <h6 class="forumname" href="exampleforum.html">Forum name</h6>
-
-                                    </div>
-                                </a>
-                                <a href="exampleforum.html">
-                                    <div class="colforumcard">
-                                        <img href="exampleforum.html" class="imgcard"
-                                            src="https://images.unsplash.com/photo-1515344905723-babc01aac23d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&w=1000&q=80"
-                                            alt="windmill picture">
-                                        <h6 class="forumname">For href="exampleforum.html"um name</h6>
-
-                                    </div>
-                                </a>
-                                <a href="exampleforum.html">
-                                    <div class="colforumcard">
-                                        <img href="exampleforum.html" class="imgcard"
-                                            src="https://images.unsplash.com/photo-1515344905723-babc01aac23d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&w=1000&q=80"
-                                            alt="windmill picture">
-                                        <h6 class="forumname" href="exampleforum.html">Forum name</h6>
-
-                                    </div>
-                                </a>
-                            </div>
-                            <br>
-                            <h4>Recommended Forums</h4>
-                            <div class="rowforum">
-                                <a href="exampleforum.html">
-                                    <div class="colforumcard">
-                                        <img href="exampleforum.html" class="imgcard"
-                                            src="https://images.unsplash.com/photo-1515344905723-babc01aac23d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&w=1000&q=80"
-                                            alt="windmill picture">
-                                        <h6 class="forumname" href="exampleforum.html">Forum name</h6>
-
-                                    </div>
-                                </a>
-                                <a href="exampleforum.html">
-                                    <div class="colforumcard">
-                                        <img href="exampleforum.html" class="imgcard"
-                                            src="https://images.unsplash.com/photo-1515344905723-babc01aac23d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&w=1000&q=80"
-                                            alt="windmill picture">
-                                        <h6 class="forumname" href="exampleforum.html">Forum name</h6>
-
-                                    </div>
-                                </a>
-                                <a href="exampleforum.html">
-                                    <div class="colforumcard">
-                                        <img href="exampleforum.html" class="imgcard"
-                                            src="https://images.unsplash.com/photo-1515344905723-babc01aac23d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&w=1000&q=80"
-                                            alt="windmill picture">
-                                        <h6 class="forumname" href="exampleforum.html">Forum name</h6>
-
-                                    </div>
-                                </a>
-                            </div>
-                            <div class="rowforum">
-                                <a href="exampleforum.html">
-                                    <div class="colforumcard">
-                                        <img href="exampleforum.html" class="imgcard"
-                                            src="https://images.unsplash.com/photo-1515344905723-babc01aac23d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&w=1000&q=80"
-                                            alt="windmill picture">
-                                        <h6 class="forumname" href="exampleforum.html">Forum name</h6>
-
-                                    </div>
-                                </a>
-                                <a href="exampleforum.html">
-                                    <div class="colforumcard">
-                                        <img href="exampleforum.html" class="imgcard"
-                                            src="https://images.unsplash.com/photo-1515344905723-babc01aac23d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&w=1000&q=80"
-                                            alt="windmill picture">
-                                        <h6 class="forumname" href="exampleforum.html">Forum name</h6>
-
-                                    </div>
-                                </a>
-                                <a href="exampleforum.html">
-                                    <div class="colforumcard">
-                                        <img href="exampleforum.html" class="imgcard"
-                                            src="https://images.unsplash.com/photo-1515344905723-babc01aac23d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&w=1000&q=80"
-                                            alt="windmill picture">
-                                        <h6 class="forumname" href="exampleforum.html">Forum name</h6>
-
-                                    </div>
-                                </a>
-
-                            </div>
+                            <h4>Add a Discussion</h4>
+                            <form action = "http://localhost:3002/discussions" method = "post" onsubmit="return validate();">
+                                <label for = "question">Question</label>
+                                <input type = "text" name = "question">
+                                <label for = "forum">Which Forums do you want to ask this question to?</label>
+                                <input type = "text" name= "forums">
+                                <input type = "hidden" name= "id" value="5">
+                                <input type = "hidden" name= "date" value="" id="date">
+                                <input type = "submit">
+                            </form>
+                            
 
 
 

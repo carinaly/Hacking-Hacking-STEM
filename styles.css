@@ -32,7 +32,8 @@
 .sidenav a, .dropdown-btn {
   padding: 6px 16px 6px 16px;
   text-decoration: none;
-  font-size: 32px;
+  font-size: 24px;
+  font-weight: 480; 
   color: #000000;
   display: block;
   border: none;
@@ -46,15 +47,59 @@
 
 /* On mouse-over */
 .sidenav a:hover, .dropdown-btn:hover {
-  color: #f1f1f1;
+  color: #555555;
+}
+i {
+  border: solid black;
+  border-width: 0 3px 3px 0;
+  display: inline-block;
+  padding: 3px;
 }
 
-.droptexts{
-  margin: 0 70px 0 70px; 
-  font-size: 24; 
-  text-align:center; 
-  color: #FFFFFF; 
+.right {
+  transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
+  
+  margin-top: 15px; 
+  float: right; 
+}
 
+.left {
+  transform: rotate(135deg);
+  -webkit-transform: rotate(135deg);
+}
+
+.up {
+  transform: rotate(-135deg);
+  -webkit-transform: rotate(-135deg);
+}
+
+.down {
+  transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+}
+.droptexts{
+  padding: 0px 20px 2px 16px;
+  text-decoration: none;
+  font-size: 20px;
+  color: #000000;
+  display: block;
+  border: none;
+  background: none;
+  width:100%;
+  text-align: left;
+  cursor: pointer;
+  outline: none;
+  border-top-width: 0px;
+  
+
+}
+.forumsearch{
+  margin: 15px;
+  float: left;  
+  border: none; 
+  padding: 10px 5px 10px 5px; 
+  width: 90%; 
 }
 
 /* Main content */
@@ -67,7 +112,7 @@
 /* Add an active class to the active dropdown button */
 .active {
   background-color: #DDDDDD;
-  color: white;
+  color: #555555;
   padding-left: 10px; 
   padding-right: 10px; 
 }
@@ -76,8 +121,9 @@
 .dropdown-container {
   display: none;
   background-color: #DDDDDD;
-  padding: 8px;
-  text-align: center;
+  
+  text-align: left;
+  margin: 0 0 10px 0;
 }
 
 /* Optional: Style the caret down icon */
@@ -90,7 +136,7 @@
   background: #DDDDDD; 
   margin: auto; 
   float: center; 
-  padding: 10px 20px 10px 20px; 
+  padding: 30px 20px 10px 20px; 
 }
 
   </style><style data-jss="" data-meta="y", "Themed", Static">
