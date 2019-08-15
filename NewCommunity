@@ -226,6 +226,30 @@
                         <div class="colforum">
                             <!--Search Bar for the Discussions!-->
                             <input type= "text" placeholder = "Search for Questions, Key Words" style="margin:-10px 10px 20px 0px; border-style: solid; border-width:1px; border-color:#2266E3; padding: 5px; width: 460px;">   
+                            
+                            <!--Featured Discussions-->
+                            <div id="featured">
+                               <br/><h2 style="margin-bottom:15px" >Featured Discussions</h2>
+                            
+                                 <div class="discussionB" style="
+                                width: 794.97;
+                                height: 97.26px;
+                                border-width: 1px;
+                                border-color: #979797;
+                                border-style: solid;
+                                padding: 15px 20px 15px 40px;
+                                font-size: 17px;">
+                                    <div id="DiscussionBoxText" style="max-width:730px">
+                                        <b>{Discussion Question}</b><br/>
+                                        No current answer
+                                    </div>
+                                    <img src="https://image.flaticon.com/icons/png/512/118/118740.png" style="width:20px; float:right; vertical-align:center"/>
+                              </div>
+                            </div>
+                            <br/>
+                            
+                            
+                            
                             <br/><h2 style="margin-bottom:15px" >My Discussions</h2>
 
                             <div id="ListStart"></div>
@@ -247,7 +271,7 @@
                                         <b>{Discussion Question}</b><br/>
                                          No current answer
                                     </div>
-                                    <img src="http://cdn.onlinewebfonts.com/svg/download_211250.png" style="width:20px; float:right; bottom:50px"/>
+                                    <img src="https://image.flaticon.com/icons/png/512/118/118740.png" style="width:20px; float:right; bottom:100px"/>
                                 </div>
 
                         </div>
