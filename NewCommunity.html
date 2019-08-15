@@ -31,11 +31,17 @@
         data-react-helmet="true">
 
     <script>
-        function myFunction() {
-            document.getElementById("myDropdown").classList.toggle("show");
-        }
-        function myFunction2() {
-            document.getElementById("myDropdown2").classList.toggle("show");
+        const pool = require('./express-api/data/config'); 
+
+
+        function test(forumid){
+            pool.query('SELECT * FROM forums WHERE id = ?', forumid,  (error, result) => {
+                if (error) throw error; 
+                const forum = JSON.parse(result); 
+                console.log('froum.name'); 
+
+            })
+
         }
 
 
@@ -202,6 +208,8 @@
                                             alert(Date.now());
                                             document.getElementById('date').value = Date.now();
                                         }
+
+                                        
                                     </script>
                                 </div>
 
@@ -220,6 +228,23 @@
                                 <input type = "hidden" name= "date" value="" id="date">
                                 <input type = "submit">
                             </form>
+
+                            <p id = "PleaseWork">
+                                hows it going
+
+                            </p>
+                            <script>
+                                document.getElementById("PleaseWork").innerhtml = "Hello World"; 
+                                document.write("suadsfads");
+                            
+                            </script>
+
+
+                            
+
+                            <button onclick = "test(2)">try me</button>
+                            
+
                             
 
 

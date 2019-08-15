@@ -141,7 +141,7 @@ CREATE TABLE `replies` (
   `discussionID` int(11) DEFAULT NULL,
   `response` text,
   `likes` int(11) DEFAULT '0',
-  `userID` int(11) DEFAULT NULL,
+  `userID` int(12) DEFAULT NULL,
   `dateposted` date DEFAULT NULL,
   `forumID` int(11) DEFAULT NULL,
   PRIMARY KEY (`id`)
@@ -280,6 +280,24 @@ insert  into `replies`(`id`,`discussionID`,`response`,`likes`,`userID`,`datepost
 (128,3,'helpful answer 3',32,232,'2019-08-13',13),
 (129,4,'helpful answer 4',32,232,'2019-08-13',13),
 (130,5,'helpful answer 5',32,232,'2019-08-13',13);
+
+/*Table structure for table `users` */
+
+DROP TABLE IF EXISTS `users`;
+
+CREATE TABLE `users` (
+  `FirstName` varchar(16) DEFAULT NULL,
+  `LastName` varchar(16) DEFAULT NULL,
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `SchoolDistrict` tinytext,
+  `Subject` tinytext,
+  `Gradelevel` tinytext,
+  `Username` tinytext,
+  `password` tinytext,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+/*Data for the table `users` */
 
 /*!40101 SET SQL_MODE=@OLD_SQL_MODE */;
 /*!40014 SET FOREIGN_KEY_CHECKS=@OLD_FOREIGN_KEY_CHECKS */;
