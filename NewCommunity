@@ -51,6 +51,8 @@
           var finalHtml = template.innerHTML
                 .replace("{Discussion Question}", DiscussionContent);
       
+            //var noDiscussionText = document.getElementById('noDiscussions');
+           //noDiscussionText.remove();
           //document.body.insertAdjacentHTML('beforeend', finalHtml);//
           Discussion.insertAdjacentHTML('beforeend', finalHtml);
       }
@@ -227,22 +229,27 @@
                             <br/><h2 style="margin-bottom:15px" >My Discussions</h2>
 
                             <div id="ListStart"></div>
-                            <!--discussion box things!-->
-                        <div id="template" style="display:none">
-                            <div class="discussionB" style="
-                            width: 794.97;
-                            height: 97.26px;
-                            border-width: 1px;
-                            border-color: #979797;
-                            border-style: solid;
-                            padding: 15px 20px 15px 40px;
-                            font-size: 17px;">
-                                <div id="DiscussionBoxText" style="max-width:730px">
-                                    <b>{Discussion Question}</b><br/>
-                                     No current answer
+                            <!--<p id="noDiscussions">You have no current discussions. Join or make one to get started!</p>-->
+
+
+                        <!--discussion box things!-->
+                            <div id="template" style="display:none">
+
+                                <div class="discussionB" style="
+                                width: 794.97;
+                                height: 97.26px;
+                                border-width: 1px;
+                                border-color: #979797;
+                                border-style: solid;
+                                padding: 15px 20px 15px 40px;
+                                font-size: 17px;">
+                                    <div id="DiscussionBoxText" style="max-width:730px">
+                                        <b>{Discussion Question}</b><br/>
+                                         No current answer
+                                    </div>
+                                    <img src="http://cdn.onlinewebfonts.com/svg/download_211250.png" style="width:20px; float:right; bottom:50px"/>
                                 </div>
-                                <img src="http://cdn.onlinewebfonts.com/svg/download_211250.png" style="width:20px; float:right; bottom:50px"/>
-                            </div>
+
                         </div>
 
                         
