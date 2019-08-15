@@ -240,7 +240,7 @@
                                 padding: 15px 20px 15px 40px;
                                 font-size: 17px;">
                                     <div id="DiscussionBoxText" style="max-width:730px">
-                                        <b>{Discussion Question}</b><br/>
+                                        <a href="./Discussion Page.html"><b>{Discussion Question}</b><br/></a>
                                         No current answer
                                     </div>
                                     <img src="https://image.flaticon.com/icons/png/512/118/118740.png" style="width:20px; float:right; vertical-align:center"/>
@@ -268,7 +268,10 @@
                                 padding: 15px 20px 15px 40px;
                                 font-size: 17px;">
                                     <div id="DiscussionBoxText" style="max-width:730px">
-                                        <b>{Discussion Question}</b><br/>
+                                            <a href="./Discussion Page.html">
+                                                <b>{Discussion Question}</b>
+                                                <br/>
+                                            </a>
                                          No current answer
                                     </div>
                                     <img src="https://image.flaticon.com/icons/png/512/118/118740.png" style="width:20px; float:right; bottom:100px"/>
