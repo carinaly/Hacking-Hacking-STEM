@@ -11,7 +11,7 @@ const router = app => {
 
     app.get('/styles.css', (request, response) => {
 
-        fs.readFile('styles.css', function(error, content){
+        fs.readFile('../styles.css', function(error, content){
             if (error) {
                 if(error.code == 'ENOENT'){
                         response.writeHead(404, { 'Content-Type': 'text/html' });

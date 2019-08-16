@@ -1019,3 +1019,27 @@ i {
     padding-bottom: 56px;
     flex-direction: column;
   }</style>
+
+  .Forum {
+    position: relative;
+    margin-left: 0px;
+    border: 1px solid #DDDDDD;
+    max-width: 289px;
+    height: 150px;
+    margin: 12px 12px 12px 12px;
+    text-align: center;
+    font-size: 16px;
+}
+.comments {
+    position: relative;
+    margin: 12px 12px 12px 12px;
+    }
+#ReviewInput {
+    width: 794.97px;
+    height: 176.42px;
+}
+#Review-Title {
+    width: 794.97px;
+}
+.review {
+}
