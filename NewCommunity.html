@@ -30,23 +30,7 @@
         content="Build affordable inquiry and project-based activities to visualize data across science, technology, engineering, and math (STEM) curriculum. Middle school standards-based lesson plans written by teachers for teachers."
         data-react-helmet="true">
 
-    <script>
-        const pool = require('./express-api/data/config'); 
-
-
-        function test(forumid){
-            pool.query('SELECT * FROM forums WHERE id = ?', forumid,  (error, result) => {
-                if (error) throw error; 
-                const forum = JSON.parse(result); 
-                console.log('froum.name'); 
-
-            })
-
-        }
-
-
-
-    </script>
+   
 
 </head>
 
@@ -229,16 +213,7 @@
                                 <input type = "submit">
                             </form>
 
-                            <p id = "PleaseWork">
-                                hows it going
-
-                            </p>
-                            <script>
-                                document.getElementById("PleaseWork").innerhtml = "Hello World"; 
-                                document.write("suadsfads");
                             
-                            </script>
-
 
                             
 

@@ -1,4 +1,5 @@
 const pool = require('./data/config');
+const path = require('path'); 
 
 const router = app => {
     app.get('/', (request, response) => {
@@ -6,6 +7,11 @@ const router = app => {
             message: 'Node.js and Express Rest API'
         })
     })
+
+    app.get('/home',function(req,res){
+        res.sendFile(path.join(__dirname+'/NewCommunity.html'));
+        //__dirname : It will resolve to your project folder.
+      });
 
     app.get('/forums', (request,response) => {
          pool.query('SELECT * FROM forums', (error,result) => {
