@@ -1,0 +1,352 @@
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hacking STEM - Microsoft Educator Center (Preview)</title>
+    <meta property="og:locale" content="en-us">
+    <meta property="og:title" content="Microsoft Educator CentrePreview">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://preview.education.microsoft.com">
+    <meta property="og:image"
+        content="https://cdn.preview.education.microsoft.com/content/en-us/pages/homepage/training_1083x609.jpg">
+    <meta property="og:image:width" content="1083">
+    <meta property="og:image:height" content="609">
+    <meta property="og:site_name" content="Microsoft Educator Centre Preview">
+    <meta property="og:description"
+        content="Welcome to the first courses available in your updated Microsoft Educator Centre. Explore new concepts and develop skills while you earn professional development credit.">
+    <meta property="fb:app_id" content="340113966709947">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:site" content="@MicrosoftEDU">
+    <link rel="stylesheet"
+        href="https://cdn.preview.education.microsoft.com/dist/public/20190729.2/styles.8ea008340c035216c39d.css">
+    <link rel="stylesheet"
+        href="https://www.microsoft.com/mwf/css/bundle/1.55.0/west-european/default/mwf-main.min.css?apiVersion=1.0">
+    <link rel="icon" type="image/x-icon"
+        href="https://cdn.preview.education.microsoft.com/content/en-us/shared/favicon.ico">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="canonical" href="https://preview.education.microsoft.com/hackingStem" data-react-helmet="true">
+    <meta name="description"
+        content="Build affordable inquiry and project-based activities to visualize data across science, technology, engineering, and math (STEM) curriculum. Middle school standards-based lesson plans written by teachers for teachers."
+        data-react-helmet="true">
+
+    <script>
+        const pool = require('./express-api/data/config'); 
+        function test(forumid){
+            pool.query('SELECT * FROM forums WHERE id = ?', forumid,  (error, result) => {
+                if (error) throw error; 
+                const forum = JSON.parse(result); 
+                console.log('froum.name'); 
+            })
+        }
+    </script>
+
+    <script>
+        function AddDiscussion(){
+          var Start = document.getElementById('ListStart');
+          var DiscussionContent = document.getElementById('DiscussionInput').value;
+          console.log(DiscussionContent);
+      
+          var template = document.getElementById('template');
+          var finalHtml = template.innerHTML
+                .replace("{Discussion Question}", DiscussionContent);
+      
+            //var noDiscussionText = document.getElementById('noDiscussions');
+           //noDiscussionText.remove();
+          //document.body.insertAdjacentHTML('beforeend', finalHtml);//
+          Start.insertAdjacentHTML('beforeend', finalHtml);
+      }
+      </script>
+
+</head>
+
+<body>
+    <div id="root">
+        <div class="c011">
+            <header class="c012 c013" data-auto-id="navbar">
+                <div class="c014 c0111 container">
+                    <div class="c015">
+                        <div data-auto-id="navbarMicrosoftLink">
+                            <a class="c016" href="https://www.microsoft.com">
+                                <img class="c017"
+                                    src="https://cdn.preview.education.microsoft.com/content/en-us/shared/MicrosoftLogo.png"
+                                    alt="Microsoft">
+                            </a>
+                        </div>
+                        <div data-auto-id="navbarHomelink" class="c018">
+                            <a class="c019" href="/">Educator Center
+                                <sup class="c0110">Preview</sup>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="c015">
+                        <a class="c015h" href="HackingSTEMHome.html">Hacking STEM Home</a>
+                        <a class="c015h" href="Projectlibrary.html">Project Library</a>
+                        <a class="c015h" href="./NewCommunity.html">Community</a>
+                        <a class="c015h" href="ContactHackingSTEM.html">Contact Hacking STEM</a>
+                        <a class="c015h" href="CreateAProject.html">Create a Project</a>
+                    </div>
+                    <a data-auto-id="navbarSignIn" class="c015" href="/login">Sign In</a>
+                </div>
+            </header>
+            <div role="main">
+                <section class="c0124 m-hero-item f-x-left f-y-center context-accessory f-mask-100">
+                    <picture>
+                        <source
+                        srcset="https://sxbclq.dm.files.1drv.com/y4mGXhz3_iLlhwYAud10JOFOh_aQqf1zGZ5kMxCX9G3ErZauFY4IiR3jnfQzB1TKzqMrw67rJ6geFIZxuJbpDDz7CmzxgKjNCQ0i6FwV2RKrH20nBEUdulUPc5N_Maz-q9ieNqtRBX0CzvGzldvmPOPCXfMfx-rvOQAyTxUxALAgupyuFCx3nNl94FoxwxYtsTbMsmTZ9IpTSnyKkhNzE45sQ/dragon_edited_001.jpg?psid=1"
+                            media="(min-width: 1779px)">
+                        <source
+                        srcset="https://sxbclq.dm.files.1drv.com/y4mGXhz3_iLlhwYAud10JOFOh_aQqf1zGZ5kMxCX9G3ErZauFY4IiR3jnfQzB1TKzqMrw67rJ6geFIZxuJbpDDz7CmzxgKjNCQ0i6FwV2RKrH20nBEUdulUPc5N_Maz-q9ieNqtRBX0CzvGzldvmPOPCXfMfx-rvOQAyTxUxALAgupyuFCx3nNl94FoxwxYtsTbMsmTZ9IpTSnyKkhNzE45sQ/dragon_edited_001.jpg?psid=1"
+                            media="(min-width: 1400px)">
+                        <source
+                        srcset="https://sxbclq.dm.files.1drv.com/y4mGXhz3_iLlhwYAud10JOFOh_aQqf1zGZ5kMxCX9G3ErZauFY4IiR3jnfQzB1TKzqMrw67rJ6geFIZxuJbpDDz7CmzxgKjNCQ0i6FwV2RKrH20nBEUdulUPc5N_Maz-q9ieNqtRBX0CzvGzldvmPOPCXfMfx-rvOQAyTxUxALAgupyuFCx3nNl94FoxwxYtsTbMsmTZ9IpTSnyKkhNzE45sQ/dragon_edited_001.jpg?psid=1"
+                            media="(min-width: 1084px)">
+                        <source
+                        srcset="https://sxbclq.dm.files.1drv.com/y4mGXhz3_iLlhwYAud10JOFOh_aQqf1zGZ5kMxCX9G3ErZauFY4IiR3jnfQzB1TKzqMrw67rJ6geFIZxuJbpDDz7CmzxgKjNCQ0i6FwV2RKrH20nBEUdulUPc5N_Maz-q9ieNqtRBX0CzvGzldvmPOPCXfMfx-rvOQAyTxUxALAgupyuFCx3nNl94FoxwxYtsTbMsmTZ9IpTSnyKkhNzE45sQ/dragon_edited_001.jpg?psid=1"
+                            media="(min-width: 768px)">
+                        <source
+                        srcset="https://sxbclq.dm.files.1drv.com/y4mGXhz3_iLlhwYAud10JOFOh_aQqf1zGZ5kMxCX9G3ErZauFY4IiR3jnfQzB1TKzqMrw67rJ6geFIZxuJbpDDz7CmzxgKjNCQ0i6FwV2RKrH20nBEUdulUPc5N_Maz-q9ieNqtRBX0CzvGzldvmPOPCXfMfx-rvOQAyTxUxALAgupyuFCx3nNl94FoxwxYtsTbMsmTZ9IpTSnyKkhNzE45sQ/dragon_edited_001.jpg?psid=1"
+                            media="(min-width: 540px)">
+                        <source
+                        srcset="https://sxbclq.dm.files.1drv.com/y4mGXhz3_iLlhwYAud10JOFOh_aQqf1zGZ5kMxCX9G3ErZauFY4IiR3jnfQzB1TKzqMrw67rJ6geFIZxuJbpDDz7CmzxgKjNCQ0i6FwV2RKrH20nBEUdulUPc5N_Maz-q9ieNqtRBX0CzvGzldvmPOPCXfMfx-rvOQAyTxUxALAgupyuFCx3nNl94FoxwxYtsTbMsmTZ9IpTSnyKkhNzE45sQ/dragon_edited_001.jpg?psid=1"
+                            media="(min-width: 0)">
+                        <img srcset="https://sxbclq.dm.files.1drv.com/y4mGXhz3_iLlhwYAud10JOFOh_aQqf1zGZ5kMxCX9G3ErZauFY4IiR3jnfQzB1TKzqMrw67rJ6geFIZxuJbpDDz7CmzxgKjNCQ0i6FwV2RKrH20nBEUdulUPc5N_Maz-q9ieNqtRBX0CzvGzldvmPOPCXfMfx-rvOQAyTxUxALAgupyuFCx3nNl94FoxwxYtsTbMsmTZ9IpTSnyKkhNzE45sQ/dragon_edited_001.jpg?psid=1"
+                            alt="">
+                    </picture>
+                    <div data-auto-id="hero-content" class="c0131 c0111 container">
+                        <div class="c0132 row">
+                            <h1 data-auto-id="hero-title" data-hero-title="Your Communities" class="c0127"
+                                title="Your Communities">Your Communities</h1>
+                            <div data-auto-id="hero-sub-title"
+                                data-hero-sub-title="Help build the Hacking STEM curriculum by connecting with your communtity and making projects more accesible for teachers of all backgrounds"
+                                class="c0130 c-caption">
+                                <div class="LinesEllipsis  ">Help build the Hacking STEM curriculum by connecting with
+                                    your community and making projects more accessible for teachers of all backgrounds.
+                                    <wbr>
+                                        </div>
+                                </div>
+                            </div>
+                        </div>
+                </section>
+                <section name="menu">
+                    <div class="c0131 c0111 container">
+                        <div class="colmenu">
+                            <div class="menu">
+                                <h3>Find a Discussion</h3>
+                                <div class="dropdown">
+                                    <div class="sidenav"></div>
+
+                                    <svg height="3" width="300">
+                                        <line x1="0" y1="0" x2="345" y2="0" style="stroke:#888888;stroke-width:2;" />
+                                    </svg>
+
+                                    <button class="dropdown-btn" style="font-size:15pt">My Discussions
+                                            <i class="arrow right"></i>
+                                    </button>
+                                    
+                                    <div class="dropdown-container">
+                                        <input class = forumsearch type= "text" placeholder = "Search">
+                                        <a forumid = 3 class=droptexts href="./ForumTopic.html">DataStreamer</a><br>
+                                        <a forumid = 4 class=droptexts href="./ForumTopic.html">Lemon battery</a><br>
+                                        <a forumid = 1 class=droptexts href="./ForumTopic.html">Robotic hand</a><br>
+                                    </div>
+
+                                    <svg height="3" width="300">
+                                        <line x1="0" y1="0" x2="345" y2="0" style="stroke:#888888;stroke-width:2;" />
+                                    </svg>
+
+                                    <button class="dropdown-btn" style="font-size:15pt">Projects
+                                        <i class="arrow right"></i>
+                                    </button>
+                                    <div class="dropdown-container">
+                                        <input class = forumsearch type= "text" placeholder = "Search">
+                                        <a forumid = 2 class=droptexts href="./ForumTopic.html">Astrosocks</a><br>
+                                        <a forumid = 1 class=droptexts href="./ForumTopic.html">Robotic hand</a><br>   
+                                        <a forumid = 5 class=droptexts href="./ForumTopic.html">Tuned Mass Damper</a><br>
+                                        <a forumid = 4 class=droptexts href="./ForumTopic.html">Lemon Battery</a><br>
+                                        <a forumid = 8 class=droptexts href="./ForumTopic.html">Wave Machine</a><br>
+                                        <a forumid = 9 class=droptexts href="./ForumTopic.html">Brain gong</a><br>
+                                        <a forumid = 13 class=droptexts href="./ForumTopic.html">Windmill</a><br>
+                                    </div>
+                                    <svg height="3" width="300">
+                                        <line x1="0" y1="0" x2="345" y2="0" style="stroke:#888888;stroke-width:2;" />
+                                    </svg>
+
+                                    <button class="dropdown-btn"style="font-size:15pt">Technology
+                                        <i class="arrow right"></i>
+                                    </button>
+                                    <div class="dropdown-container">
+                                         <input class = forumsearch type= "text" placeholder = "Search">
+                                        <a forumid = 3 class=droptexts href="./ForumTopic.html">DataStreamer</a><br>
+                                        <a forumid = 10 class=droptexts href="./ForumTopic.html">Micro:bit</a><br>
+                                      
+                                    </div>
+                                    <svg height="3" width="300">
+                                        <line x1="0" y1="0" x2="345" y2="0" style="stroke:#888888;stroke-width:2;" />
+                                    </svg>
+
+                                    <button class="dropdown-btn"style="font-size:15pt">General
+                                        <i class="arrow right"></i>
+                                    </button>
+                                    <div class="dropdown-container">
+                                        <input class = forumsearch type= "text" placeholder = "Search">
+                                        <a forumid = 6 class=droptexts href="./ForumTopic.html">Renewable Energy</a><br>
+                                        <a forumid = 7 class=droptexts href="./ForumTopic.html">Elementary</a><br>
+                                        <a forumid = 11 class=droptexts href="./ForumTopic.html">High School</a><br>
+                                        <a forumid = 12 class=droptexts href="./ForumTopic.html">Orbies</a><br>
+                                    </div>
+
+
+
+                                    <script> //* Loop through all dropdown buttons to toggle between hiding and showing its dropdown content - This allows the user to have multiple dropdowns without any conflict */
+                                        var dropdown = document.getElementsByClassName("dropdown-btn");
+                                        var i;
+                                        for (i = 0; i < dropdown.length; i++) {
+                                            dropdown[i].addEventListener("click", function () {
+                                                this.classList.toggle("active");
+                                                var dropdownContent = this.nextElementSibling;
+                                                if (dropdownContent.style.display === "block") {
+                                                    dropdownContent.style.display = "none";
+                                                } else {
+                                                    dropdownContent.style.display = "block";
+                                                }
+                                            });
+                                        }
+                                        function validate() {
+                                            alert(Date.now());
+                                            document.getElementById('date').value = Date.now();
+                                        }
+                                        
+                                    </script>
+                                </div>
+
+                            </div>
+
+                        </div>
+                        <div class="colforum">
+                            <!--Search Bar for the Discussions!-->
+                           <!-- <input type= "text" placeholder = "Search for Questions, Key Words" style="margin:-10px 10px 20px 0px; border-style: solid; border-width:1px; border-color:#2266E3; padding: 5px; width: 460px;">   
+                           -->
+
+                            <!--Discussion Topic!! Filler is Robotic Hand-->
+                            <div id="Topic">
+                               <br/><h2 style="margin-bottom:15px" >Robotic Hand</h2>
+                                <!--Search Bar for the Discussions!-->
+                            <input type= "text" placeholder = "Search for Questions, Key Words" style="margin:-5px 10px 20px 0px; border-style: solid; border-width:1px; border-color:#2266E3; padding: 5px; width: 460px;">   
+                               <a href="./Discussion Page.html">
+                                 <div class="discussionB" style="
+                                width: 794.97;
+                                height: 97.26px;
+                                border-width: 1px;
+                                border-color: #979797;
+                                border-style: solid;
+                                padding: 15px 20px 15px 40px;
+                                font-size: 17px;">
+                                  
+                                        <b>{Discussion Question}</b><br/>
+                                        No current answer
+                                 
+                                    <img src="https://image.flaticon.com/icons/png/512/118/118740.png" style="width:20px; float:right; vertical-align:center"/>
+                              </div>
+                              </a>
+                            </div>
+
+                            <div id="ListStart"></div>
+                            <!--<p id="noDiscussions">You have no current discussions. Join or make one to get started!</p>-->
+
+
+                        <!--discussion box things!-->
+                            <div id="template" style="display:none">
+                                 
+                                <div class="discussionB" style="
+                                width: 794.97;
+                                height: 97.26px;
+                                border-width: 1px;
+                                border-color: #979797;
+                                border-style: solid;
+                                padding: 15px 20px 15px 40px;
+                                font-size: 17px;">
+                                    <a href="./Discussion Page.html">
+                                              <a href="./Discussion Page.html">
+                                                <b>{Discussion Question}</b>
+                                                <br/>
+                                            </a>
+                                         No current answer
+                                        </a>
+                                 
+                                    <img src="https://image.flaticon.com/icons/png/512/118/118740.png" style="width:20px; float:right; margin-bottom:100px; "/>
+                                </div>
+                                </a>
+
+                        </div>
+
+                        
+                            <br/>
+                            <br/>
+
+
+                            <h4>Add a Discussion</h4>
+                            <form action = "http://localhost:3002/discussions" method = "post" onsubmit="return validate();">
+                                <!--<label for = "question">Question</label>
+                                <input type = "text" name = "question">-->
+                                <label for = "forum" style="padding: 5px 0px 0px 0px">Which Forums do you want to ask this question to?</label><br/>
+                                <input type = "text" name= "forums" placeholder="Forum Topic" style="padding:5px">
+                                <!--
+                                <input type = "hidden" name= "id" value="5">
+                                <input type = "hidden" name= "date" value="" id="date">
+                                <input type = "submit"> 
+                                -->
+                            </form>
+
+                            <div id="input">                                                                                  
+                                    <div>
+                                        <textarea type="text" name="forums"  id="DiscussionInput" style= "width: 794.97px; height: 126.42px; padding:5px" placeholder="Share a question, story or idea"></textarea>
+                                    </div>
+                                    <button id="submitButton" onclick="AddDiscussion();" class="c0149 c-call-to-action c-glyph" style="margin-right:18%; margin-top:15px; float:right; width:150px; text-align:center; color: #ffffff">
+                                            <span class="c0131">Submit</span>
+                                    </button>
+                                </div>
+
+                            <!--<p id = "PleaseWork">
+                                hows it going
+
+                            </p>
+                            <script>
+                                document.getElementById("PleaseWork").innerhtml = "Hello World"; 
+                                document.write("suadsfads");
+                            
+                            </script>
+
+
+                            
+
+                            <button onclick = "test(2)">try me</button>-->
+                            
+
+                            
+
+
+
+
+                        </div>
+
+                    </div>
+
+            </div>
+            <footer class="c0116">
+                <div class="c0117 c0111 container">
+                    <a href="https://support.microsoft.com/contactus/" class="c0118 c0119">Contact us</a>
+                    <a href="https://privacy.microsoft.com/PrivacyStatement" class="c0118 c0119">Privacy &amp;
+                        cookies</a>
+                    <a href="https://www.microsoft.com/servicesagreement/" class="c0118 c0119">Terms of use</a>
+                    <span class="c0118">© Microsoft 2019</span>
+                </div>
+            </footer>
+            </section>
+        </div>
+
+    </div>
+    </div>
+</body>
+
+</html>
