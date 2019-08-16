@@ -1,0 +1,165 @@
+head
+  meta(charset='utf-8')
+  meta(name='viewport' content='width=device-width, initial-scale=1.0')
+  title Hacking STEM - Microsoft Educator Center (Preview)
+  meta(property='og:locale' content='en-us')
+  meta(property='og:title' content='Microsoft Educator CentrePreview')
+  meta(property='og:type' content='website')
+  meta(property='og:url' content='https://preview.education.microsoft.com')
+  meta(property='og:image' content='https://cdn.preview.education.microsoft.com/content/en-us/pages/homepage/training_1083x609.jpg')
+  meta(property='og:image:width' content='1083')
+  meta(property='og:image:height' content='609')
+  meta(property='og:site_name' content='Microsoft Educator Centre Preview')
+  meta(property='og:description' content='Welcome to the first courses available in your updated Microsoft Educator Centre. Explore new concepts and develop skills while you earn professional development credit.')
+  meta(property='fb:app_id' content='340113966709947')
+  meta(name='twitter:card' content='summary')
+  meta(name='twitter:site' content='@MicrosoftEDU')
+  link(rel='stylesheet' href='https://cdn.preview.education.microsoft.com/dist/public/20190729.2/styles.8ea008340c035216c39d.css')
+  link(rel='stylesheet' href='https://www.microsoft.com/mwf/css/bundle/1.55.0/west-european/default/mwf-main.min.css?apiVersion=1.0')
+  link(rel='icon' type='image/x-icon' href='https://cdn.preview.education.microsoft.com/content/en-us/shared/favicon.ico')
+  link(rel='stylesheet' href='/styles.css')
+  link(rel='canonical' href='https://preview.education.microsoft.com/hackingStem' data-react-helmet='true')
+  meta(name='description' content='Build affordable inquiry and project-based activities to visualize data across science, technology, engineering, and math (STEM) curriculum. Middle school standards-based lesson plans written by teachers for teachers.' data-react-helmet='true')
+
+
+#root
+  .c011
+    header.c012.c013(data-auto-id='navbar')
+      .c014.c0111.container
+        .c015
+          div(data-auto-id='navbarMicrosoftLink')
+            a.c016(href='https://www.microsoft.com')
+              img.c017(src='https://cdn.preview.education.microsoft.com/content/en-us/shared/MicrosoftLogo.png' alt='Microsoft')
+          .c018(data-auto-id='navbarHomelink')
+            a.c019(href='/')
+              | Educator Center
+              sup.c0110 Preview
+        .c015
+          a.c015h(href='HackingSTEMHome.html') Hacking STEM Home
+          a.c015h(href='Projectlibrary.html') Project Library
+          a.c015h(href='Community.html') Community
+          a.c015h(href='ContactHackingSTEM.html') Contact Hacking STEM
+          a.c015h(href='CreateAProject.html') Create a Project
+        a.c015(data-auto-id='navbarSignIn' href='/login') Sign In
+    div(role='main')
+      section.c0124.m-hero-item.f-x-left.f-y-center.context-accessory.f-mask-100
+        picture
+          source(srcset='http://cdn.wonderfulengineering.com/wp-content/uploads/2016/01/Desktop-Wallpaper-4.jpg' media='(min-width: 1779px)')
+          source(srcset='http://cdn.wonderfulengineering.com/wp-content/uploads/2016/01/Desktop-Wallpaper-4.jpg' media='(min-width: 1400px)')
+          source(srcset='http://cdn.wonderfulengineering.com/wp-content/uploads/2016/01/Desktop-Wallpaper-4.jpg' media='(min-width: 1084px)')
+          source(srcset='http://cdn.wonderfulengineering.com/wp-content/uploads/2016/01/Desktop-Wallpaper-4.jpg' media='(min-width: 768px)')
+          source(srcset='http://cdn.wonderfulengineering.com/wp-content/uploads/2016/01/Desktop-Wallpaper-4.jpg' media='(min-width: 540px)')
+          source(srcset='http://cdn.wonderfulengineering.com/wp-content/uploads/2016/01/Desktop-Wallpaper-4.jpg' media='(min-width: 0)')
+          img(srcset='http://cdn.wonderfulengineering.com/wp-content/uploads/2016/01/Desktop-Wallpaper-4.jpg' alt='')
+        .c0131.c0111.container(data-auto-id='hero-content')
+          .c0132.row
+            h1.c0127(data-auto-id='hero-title' data-hero-title='Your Communities' title='Your Communities') Your Communities
+            .c0130.c-caption(data-auto-id='hero-sub-title' data-hero-sub-title='Help build the Hacking STEM curriculum by connecting with your communtity and making projects more accesible for teachers of all backgrounds')
+              .LinesEllipsis
+                -var forum = forumdb
+                h1 #{forum.name}
+                p #{forum.id}
+                | Help build the Hacking STEM curriculum by connecting with
+                | your community and making projects more accessible for teachers of all backgrounds.
+                wbr
+      section(name='menu')
+        .c0131.c0111.container
+          .colmenu
+            .menu
+              h3 Find a Discussion
+              .dropdown
+                .sidenav
+                svg(height='3' width='345')
+                  line(x1='0' y1='0' x2='345' y2='0' style='stroke:#888888;stroke-width:2;')
+                button.dropdown-btn
+                  | Your Discussions
+                  i.arrow.right
+                .dropdown-container
+                  input.forumsearch(type='text' placeholder='Search')
+                  a.droptexts(forumid='3' href='#') DataStreamer
+                  br
+                  a.droptexts(forumid='4' href='#') Lemon battery
+                  br
+                  a.droptexts(forumid='1' href='#') Robotic hand
+                  br
+                svg(height='3' width='345')
+                  line(x1='0' y1='0' x2='345' y2='0' style='stroke:#888888;stroke-width:2;')
+                button.dropdown-btn
+                  | Projects
+                  i.arrow.right
+                .dropdown-container
+                  input.forumsearch(type='text' placeholder='Search')
+                  a.droptexts(forumid='2' href='#') Astrosocks
+                  br
+                  a.droptexts(forumid='1' href='#') Robotic hand
+                  br
+                  a.droptexts(forumid='5' href='#') Tuned Mass Damper
+                  br
+                  a.droptexts(forumid='4' href='#') Lemon Battery
+                  br
+                  a.droptexts(forumid='8' href='#') Wave Machine
+                  br
+                  a.droptexts(forumid='9' href='#') Brain gong
+                  br
+                  a.droptexts(forumid='13' href='#') Windmill
+                  br
+                svg(height='3' width='345')
+                  line(x1='0' y1='0' x2='345' y2='0' style='stroke:#888888;stroke-width:2;')
+                button.dropdown-btn
+                  | Technology
+                  i.arrow.right
+                .dropdown-container
+                  input.forumsearch(type='text' placeholder='Search')
+                  a.droptexts(forumid='3' href='#') DataStreamer
+                  br
+                  a.droptexts(forumid='10' href='#') Micro:bit
+                  br
+                svg(height='3' width='345')
+                  line(x1='0' y1='0' x2='345' y2='0' style='stroke:#888888;stroke-width:2;')
+                button.dropdown-btn
+                  | General
+                  i.arrow.right
+                .dropdown-container
+                  input.forumsearch(type='text' placeholder='Search')
+                  a.droptexts(forumid='6' href='#') Renewable Energy
+                  br
+                  a.droptexts(forumid='7' href='#') Elementary
+                  br
+                  a.droptexts(forumid='11' href='#') High School
+                  br
+                  a.droptexts(forumid='12' href='#') Orbies
+                  br
+                script.
+                  //* Loop through all dropdown buttons to toggle between hiding and showing its dropdown content - This allows the user to have multiple dropdowns without any conflict */
+                  var dropdown = document.getElementsByClassName("dropdown-btn");
+                  var i;
+                  for (i = 0; i < dropdown.length; i++) {
+                  dropdown[i].addEventListener("click", function () {
+                  this.classList.toggle("active");
+                  var dropdownContent = this.nextElementSibling;
+                  if (dropdownContent.style.display === "block") {
+                  dropdownContent.style.display = "none";
+                  } else {
+                  dropdownContent.style.display = "block";
+                  }
+                  });
+                  }
+                  function validate() {
+                  alert(Date.now());
+                  document.getElementById('date').value = Date.now();
+                  }
+          .colforum
+            h1 #{JSON.parse(forumdb).name}
+            hi #{JSON.parse(forumdb).id}
+            
+        
+
+
+    footer.c0116
+      .c0117.c0111.container
+        a.c0118.c0119(href='https://support.microsoft.com/contactus/') Contact us
+        a.c0118.c0119(href='https://privacy.microsoft.com/PrivacyStatement')
+          | Privacy &amp;
+          | cookies
+        a.c0118.c0119(href='https://www.microsoft.com/servicesagreement/') Terms of use
+        span.c0118 &copy; Microsoft 2019

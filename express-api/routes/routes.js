@@ -25,6 +25,14 @@ const router = app => {
            response.send(result); 
        })
    })
+
+   app.get('/forums/:id', function(req, res) {
+
+    console.log(req.params)
+
+    res.render('NewCommunity', {db: pool, forumid: req.params})
+
+})
    
    app.get('/replies', (request,response) => {
     pool.query('SELECT * FROM replies', (error,result) => {
@@ -35,7 +43,7 @@ const router = app => {
 
     
 
-app.get('/forums/:id', (request, response)=>{
+/*app.get('/forums/:id', (request, response)=>{
     const id = request.params.id; 
      pool.query('SELECT * FROM forums WHERE id = ?', id, (error, result) =>{
         if (error) throw error; 
@@ -44,6 +52,8 @@ app.get('/forums/:id', (request, response)=>{
     })
 
 })
+
+*/
 app.get('/discussions/:id', (request, response)=>{
     const id = request.params.id; 
      pool.query('SELECT * FROM discussions WHERE id = ?', id, (error, result) =>{

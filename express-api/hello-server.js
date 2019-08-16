@@ -2,7 +2,8 @@ const express = require('express');
 const port = 3002; 
 const app = express(); 
 const bodyParser = require('body-parser'); 
-const routes = require('./routes/routes'); 
+const routes = require('./routes/newroutes');
+const pug = require('pug');  
 
 app.use(bodyParser.json()); 
 app.use(bodyParser.urlencoded({
@@ -10,6 +11,8 @@ app.use(bodyParser.urlencoded({
     
 }));
 
+app.set('view engine', 'pug');
+app.set('views',__dirname);
 routes(app); 
 
 const server = app.listen(port, (error) => {
