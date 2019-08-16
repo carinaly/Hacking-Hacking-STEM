@@ -43,7 +43,7 @@
 
     <script>
         function AddDiscussion(){
-          var Discussion = document.getElementById('ListStart');
+          var Start = document.getElementById('ListStart');
           var DiscussionContent = document.getElementById('DiscussionInput').value;
           console.log(DiscussionContent);
       
@@ -54,7 +54,7 @@
             //var noDiscussionText = document.getElementById('noDiscussions');
            //noDiscussionText.remove();
           //document.body.insertAdjacentHTML('beforeend', finalHtml);//
-          Discussion.insertAdjacentHTML('beforeend', finalHtml);
+          Start.insertAdjacentHTML('beforeend', finalHtml);
       }
       </script>
 
@@ -146,9 +146,9 @@
                                     
                                     <div class="dropdown-container">
                                         <input class = forumsearch type= "text" placeholder = "Search">
-                                        <a forumid = 3 class=droptexts href="#">DataStreamer</a><br>
-                                        <a forumid = 4 class=droptexts href="#">Lemon battery</a><br>
-                                        <a forumid = 1 class=droptexts href="#">Robotic hand</a><br>
+                                        <a forumid = 3 class=droptexts href="./ForumTopic.html">DataStreamer</a><br>
+                                        <a forumid = 4 class=droptexts href="./ForumTopic.html">Lemon battery</a><br>
+                                        <a forumid = 1 class=droptexts href="./ForumTopic.html">Robotic hand</a><br>
                                     </div>
 
                                     <svg height="3" width="300">
@@ -160,13 +160,13 @@
                                     </button>
                                     <div class="dropdown-container">
                                         <input class = forumsearch type= "text" placeholder = "Search">
-                                        <a forumid = 2 class=droptexts href="#">Astrosocks</a><br>
-                                        <a forumid = 1 class=droptexts href="#">Robotic hand</a><br>   
-                                        <a forumid = 5 class=droptexts href="#">Tuned Mass Damper</a><br>
-                                        <a forumid = 4 class=droptexts href="#">Lemon Battery</a><br>
-                                        <a forumid = 8 class=droptexts href="#">Wave Machine</a><br>
-                                        <a forumid = 9 class=droptexts href="#">Brain gong</a><br>
-                                        <a forumid = 13 class=droptexts href="#">Windmill</a><br>
+                                        <a forumid = 2 class=droptexts href="./ForumTopic.html">Astrosocks</a><br>
+                                        <a forumid = 1 class=droptexts href="./ForumTopic.html">Robotic hand</a><br>   
+                                        <a forumid = 5 class=droptexts href="./ForumTopic.html">Tuned Mass Damper</a><br>
+                                        <a forumid = 4 class=droptexts href="./ForumTopic.html">Lemon Battery</a><br>
+                                        <a forumid = 8 class=droptexts href="./ForumTopic.html">Wave Machine</a><br>
+                                        <a forumid = 9 class=droptexts href="./ForumTopic.html">Brain gong</a><br>
+                                        <a forumid = 13 class=droptexts href="./ForumTopic.html">Windmill</a><br>
                                     </div>
                                     <svg height="3" width="300">
                                         <line x1="0" y1="0" x2="345" y2="0" style="stroke:#888888;stroke-width:2;" />
@@ -177,8 +177,8 @@
                                     </button>
                                     <div class="dropdown-container">
                                          <input class = forumsearch type= "text" placeholder = "Search">
-                                        <a forumid = 3 class=droptexts href="#">DataStreamer</a><br>
-                                        <a forumid = 10 class=droptexts href="#">Micro:bit</a><br>
+                                        <a forumid = 3 class=droptexts href="./ForumTopic.html">DataStreamer</a><br>
+                                        <a forumid = 10 class=droptexts href="./ForumTopic.html">Micro:bit</a><br>
                                       
                                     </div>
                                     <svg height="3" width="300">
@@ -190,10 +190,10 @@
                                     </button>
                                     <div class="dropdown-container">
                                         <input class = forumsearch type= "text" placeholder = "Search">
-                                        <a forumid = 6 class=droptexts href="#">Renewable Energy</a><br>
-                                        <a forumid = 7 class=droptexts href="#">Elementary</a><br>
-                                        <a forumid = 11 class=droptexts href="#">High School</a><br>
-                                        <a forumid = 12 class=droptexts href="#">Orbies</a><br>
+                                        <a forumid = 6 class=droptexts href="./ForumTopic.html">Renewable Energy</a><br>
+                                        <a forumid = 7 class=droptexts href="./ForumTopic.html">Elementary</a><br>
+                                        <a forumid = 11 class=droptexts href="./ForumTopic.html">High School</a><br>
+                                        <a forumid = 12 class=droptexts href="./ForumTopic.html">Orbies</a><br>
                                     </div>
 
 
@@ -230,7 +230,7 @@
                             <!--Featured Discussions-->
                             <div id="featured">
                                <br/><h2 style="margin-bottom:15px" >Featured Discussions</h2>
-                            
+                               <a href="./Discussion Page.html">
                                  <div class="discussionB" style="
                                 width: 794.97;
                                 height: 97.26px;
@@ -239,12 +239,13 @@
                                 border-style: solid;
                                 padding: 15px 20px 15px 40px;
                                 font-size: 17px;">
-                                    <div id="DiscussionBoxText" style="max-width:730px">
-                                        <a href="./Discussion Page.html"><b>{Discussion Question}</b><br/></a>
+                                  
+                                        <b>{Discussion Question}</b><br/>
                                         No current answer
-                                    </div>
+                                 
                                     <img src="https://image.flaticon.com/icons/png/512/118/118740.png" style="width:20px; float:right; vertical-align:center"/>
                               </div>
+                              </a>
                             </div>
                             <br/>
                             
@@ -258,7 +259,7 @@
 
                         <!--discussion box things!-->
                             <div id="template" style="display:none">
-
+                                 
                                 <div class="discussionB" style="
                                 width: 794.97;
                                 height: 97.26px;
@@ -267,15 +268,17 @@
                                 border-style: solid;
                                 padding: 15px 20px 15px 40px;
                                 font-size: 17px;">
-                                    <div id="DiscussionBoxText" style="max-width:730px">
-                                            <a href="./Discussion Page.html">
+                                    <a href="./Discussion Page.html">
+                                              <a href="./Discussion Page.html">
                                                 <b>{Discussion Question}</b>
                                                 <br/>
                                             </a>
                                          No current answer
-                                    </div>
-                                    <img src="https://image.flaticon.com/icons/png/512/118/118740.png" style="width:20px; float:right; bottom:100px"/>
+                                        </a>
+                                 
+                                    <img src="https://image.flaticon.com/icons/png/512/118/118740.png" style="width:20px; float:right; margin-bottom:100px; "/>
                                 </div>
+                                </a>
 
                         </div>
 
