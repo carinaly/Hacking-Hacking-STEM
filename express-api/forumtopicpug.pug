@@ -17,11 +17,11 @@ head
   link(rel='stylesheet' href='https://cdn.preview.education.microsoft.com/dist/public/20190729.2/styles.8ea008340c035216c39d.css')
   link(rel='stylesheet' href='https://www.microsoft.com/mwf/css/bundle/1.55.0/west-european/default/mwf-main.min.css?apiVersion=1.0')
   link(rel='icon' type='image/x-icon' href='https://cdn.preview.education.microsoft.com/content/en-us/shared/favicon.ico')
-  link(rel='stylesheet' href='styles.css')
+  link(rel='stylesheet' href='/styles.css')
   link(rel='canonical' href='https://preview.education.microsoft.com/hackingStem' data-react-helmet='true')
   meta(name='description' content='Build affordable inquiry and project-based activities to visualize data across science, technology, engineering, and math (STEM) curriculum. Middle school standards-based lesson plans written by teachers for teachers.' data-react-helmet='true')
   script.
-    const pool = require(express-api/data/config');
+    const pool = require('./express-api/data/config');
     function test(forumid){
     pool.query('SELECT * FROM forums WHERE id = ?', forumid,  (error, result) => {
     if (error) throw error;
@@ -41,7 +41,11 @@ head
     //noDiscussionText.remove();
     //document.body.insertAdjacentHTML('beforeend', finalHtml);//
     Start.insertAdjacentHTML('beforeend', finalHtml);
+    
+    
     }
+
+  
 #root
   .c011
     header.c012.c013(data-auto-id='navbar')
@@ -57,7 +61,7 @@ head
         .c015
           a.c015h(href='HackingSTEMHome.html') Hacking STEM Home
           a.c015h(href='Projectlibrary.html') Project Library
-          a.c015h(href='NewCommunity.html') Community
+          a.c015h(href='./NewCommunity.html') Community
           a.c015h(href='ContactHackingSTEM.html') Contact Hacking STEM
           a.c015h(href='CreateAProject.html') Create a Project
         a.c015(data-auto-id='navbarSignIn' href='/login') Sign In
@@ -93,11 +97,11 @@ head
                   i.arrow.right
                 .dropdown-container
                   input.forumsearch(type='text' placeholder='Search')
-                  a.droptexts(forumid='3' href='ForumTopic.html') DataStreamer
+                  a.droptexts(forumid='3' href='http://localhost:3002/forums/3') DataStreamer
                   br
-                  a.droptexts(forumid='4' href='ForumTopic.html') Lemon battery
+                  a.droptexts(forumid='4' href='http://localhost:3002/forums/4') Lemon battery
                   br
-                  a.droptexts(forumid='1' href='ForumTopic.html') Robotic hand
+                  a.droptexts(forumid='1' href='http://localhost:3002/forums/5') Robotic hand
                   br
                 svg(height='3' width='300')
                   line(x1='0' y1='0' x2='345' y2='0' style='stroke:#888888;stroke-width:2;')
@@ -106,19 +110,19 @@ head
                   i.arrow.right
                 .dropdown-container
                   input.forumsearch(type='text' placeholder='Search')
-                  a.droptexts(forumid='2' href='ForumTopic.html') Astrosocks
+                  a.droptexts(forumid='2' href='http://localhost:3002/forums/2') Astrosocks
                   br
-                  a.droptexts(forumid='1' href='ForumTopic.html') Robotic hand
+                  a.droptexts(forumid='1' href='http://localhost:3002/forums/1') Robotic hand
                   br
-                  a.droptexts(forumid='5' href='ForumTopic.html') Tuned Mass Damper
+                  a.droptexts(forumid='5' href='http://localhost:3002/forums/5') Tuned Mass Damper
                   br
-                  a.droptexts(forumid='4' href='ForumTopic.html') Lemon Battery
+                  a.droptexts(forumid='4' href='http://localhost:3002/forums/4') Lemon Battery
                   br
-                  a.droptexts(forumid='8' href='ForumTopic.html') Wave Machine
+                  a.droptexts(forumid='8' href='http://localhost:3002/forums/8') Wave Machine
                   br
-                  a.droptexts(forumid='9' href='ForumTopic.html') Brain gong
+                  a.droptexts(forumid='9' href='http://localhost:3002/forums/9') Brain gong
                   br
-                  a.droptexts(forumid='13' href='ForumTopic.html') Windmill
+                  a.droptexts(forumid='13' href='http://localhost:3002/forums/13') Windmill
                   br
                 svg(height='3' width='300')
                   line(x1='0' y1='0' x2='345' y2='0' style='stroke:#888888;stroke-width:2;')
@@ -127,9 +131,9 @@ head
                   i.arrow.right
                 .dropdown-container
                   input.forumsearch(type='text' placeholder='Search')
-                  a.droptexts(forumid='3' href='ForumTopic.html') DataStreamer
+                  a.droptexts(forumid='3' href='http://localhost:3002/forums/3') DataStreamer
                   br
-                  a.droptexts(forumid='10' href='ForumTopic.html') Micro:bit
+                  a.droptexts(forumid='10' href='http://localhost:3002/forums/10') Micro:bit
                   br
                 svg(height='3' width='300')
                   line(x1='0' y1='0' x2='345' y2='0' style='stroke:#888888;stroke-width:2;')
@@ -138,13 +142,13 @@ head
                   i.arrow.right
                 .dropdown-container
                   input.forumsearch(type='text' placeholder='Search')
-                  a.droptexts(forumid='6' href='ForumTopic.html') Renewable Energy
+                  a.droptexts(forumid='6' href='http://localhost:3002/forums/6') Renewable Energy
                   br
-                  a.droptexts(forumid='7' href='ForumTopic.html') Elementary
+                  a.droptexts(forumid='7' href='http://localhost:3002/forums/7') Elementary
                   br
-                  a.droptexts(forumid='11' href='ForumTopic.html') High School
+                  a.droptexts(forumid='11' href='http://localhost:3002/forums/11') High School
                   br
-                  a.droptexts(forumid='12' href='ForumTopic.html') Orbies
+                  a.droptexts(forumid='12' href='http://localhost:3002/forums/12') Orbies
                   br
                 script.
                   //* Loop through all dropdown buttons to toggle between hiding and showing its dropdown content - This allows the user to have multiple dropdowns without any conflict */
@@ -161,17 +165,35 @@ head
                   }
                   });
                   }
-                  function validate() {
-                  alert(Date.now());
-                  document.getElementById('date').value = Date.now();
-                  }
+                  
           .colforum
             // Search Bar for the Discussions!
-            input(type='text' placeholder='Search for Questions, Key Words' style='margin:-10px 10px 20px 0px; border-style: solid; border-width:1px; border-color:#2266E3; padding: 5px; width: 460px;')
-            // Featured Discussions
-            #featured
+            //
+              <input type= "text" placeholder = "Search for Questions, Key Words" style="margin:-10px 10px 20px 0px; border-style: solid; border-width:1px; border-color:#2266E3; padding: 5px; width: 460px;">
+            // Discussion Topic!! Filler is Robotic Hand
+            #Topic
               br
-              h2(style='margin-bottom:15px') Featured Discussions
+              h2(style= 'margin-bottom:15px') #{JSON.parse(forum).name}
+
+             
+
+              - for (var i = 0; i < 5; ++i) {
+                script.
+                  function GetDiscussion(i){
+                  var Start = document.getElementById('ListStart');
+                  var DiscussionContent = JSON.parse(discussions[id].question);
+                  console.log('hello world'); 
+                  var template = document.getElementById('template'); 
+                  var finalHtml = template.innerHTML
+                  .replace("{Discussion Question}", DiscussionContent); 
+                  Start.insertAdjacentHTML('beforeend', finalHtml);
+                  } 
+                - }
+
+                
+              
+              // Search Bar for the Discussions!
+              input(type='text' placeholder='Search for Questions, Key Words' style='margin:-5px 10px 20px 0px; border-style: solid; border-width:1px; border-color:#2266E3; padding: 5px; width: 460px;')
               a(href='Discussion Page.html')
                 .discussionB(style='\
                 width: 794.97;\
@@ -185,35 +207,6 @@ head
                   br
                   |                                         No current answer
                   img(src='https://image.flaticon.com/icons/png/512/118/118740.png' style='width:20px; float:right; vertical-align:center')
-              a(href='Discussion Page.html')
-                .discussionB(style='\
-                width: 794.97;\
-                height: 97.26px;\
-                border-width: 1px;\
-                border-color: #979797;\
-                border-style: solid;\
-                padding: 15px 20px 15px 40px;\
-                font-size: 17px;')
-                  b {Discussion Question}
-                  br
-                  |                                        No current answer
-                  img(src='https://image.flaticon.com/icons/png/512/118/118740.png' style='width:20px; float:right; vertical-align:center')
-              a(href='Discussion Page.html')
-                .discussionB(style='\
-                width: 794.97;\
-                height: 97.26px;\
-                border-width: 1px;\
-                border-color: #979797;\
-                border-style: solid;\
-                padding: 15px 20px 15px 40px;\
-                font-size: 17px;')
-                  b {Discussion Question}
-                  br
-                  |                                        No current answer
-                  img(src='https://image.flaticon.com/icons/png/512/118/118740.png' style='width:20px; float:right; vertical-align:center')
-            br
-            br
-            h2(style='margin-bottom:15px') My Discussions
             #ListStart
             // <p id="noDiscussions">You have no current discussions. Join or make one to get started!</p>
             // discussion box things!
@@ -232,6 +225,7 @@ head
                     br
                   |                                          No current answer
                 img(src='https://image.flaticon.com/icons/png/512/118/118740.png' style='width:20px; float:right; margin-bottom:100px; ')
+            br
             svg(height='3' width='797px')
               line(x1='0' y1='0' x2='797px' y2='0' style='stroke:#888888;stroke-width:2;')
             br

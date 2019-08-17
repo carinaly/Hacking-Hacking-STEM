@@ -38,12 +38,14 @@ const router = app => {
     app.get('/forums/:id', function (req, res) {
         pool.query('SELECT * FROM `forums` WHERE id = ' + req.params.id, function (error, result) {
             if (error) throw error;
-            console.log('this is working');
-
-            //res.send(result);
  
-            res.render('NewCommunity', {
-                forumdb: JSON.stringify(result[0])
+            pool.query('SELECT * FROM `discussions` WHERE forumID = ' + req.params.id, function (error, result1) {
+                if (error) throw error;
+     
+                res.render('forumtopicpug', {
+                    forum: JSON.stringify(result[0]),
+                    discussions: JSON.stringify(result1)
+                });                       
             });
         });
     });
