@@ -1,0 +1,728 @@
+<html lang="en"><head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Designing Astro Socks to protect astronauts’ feet in microgravity - Microsoft Educator Center (Preview)</title>
+    <meta property="og:locale" content="en-us">
+    <meta property="og:title" content="Microsoft Educator Centre Preview">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://preview.education.microsoft.com"> 
+    <meta property="og:image" content="https://cdn.preview.education.microsoft.com/content/en-us/pages/homepage/training_1083x609.jpg">
+    <meta property="og:image:width" content="1083">
+    <meta property="og:image:height" content="609">
+    <meta property="og:site_name" content="Microsoft Educator Centre Preview">
+    <meta property="og:description" content="Welcome to the first courses available in your updated Microsoft Educator Centre. Explore new concepts and develop skills while you earn professional development credit.">
+    <meta property="fb:app_id" content="340113966709947">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:site" content="@MicrosoftEDU">
+    <link rel="stylesheet" href="https://cdn.preview.education.microsoft.com/dist/public/20190729.2/styles.8ea008340c035216c39d.css">
+    <link rel="stylesheet" href="https://www.microsoft.com/mwf/css/bundle/1.55.0/west-european/default/mwf-main.min.css?apiVersion=1.0">
+    <link rel="icon" type="image/x-icon" href="https://cdn.preview.education.microsoft.com/content/en-us/shared/favicon.ico">
+
+<style data-jss="" data-meta="m, Themed, Static">
+.c0111 {
+  width: 100%;
+  margin: 0 auto;
+  max-width: 1600px;
+}
+@media (max-width: 1084px) {
+  .c0111 {
+    padding-left: 5%;
+    padding-right: 5%;
+  }
+}
+@media (min-width: 1085px) and (max-width: 1760.0000000000002px) {
+  .c0111 {
+    width: 90%;
+    margin-left: 5%;
+    margin-right: 5%;
+  }
+}
+</style><style data-jss="" data-meta="y, Themed, Static">
+.c012 {
+  width: 100%;
+  height: 48px;
+  background: #ffffff;
+  box-sizing: border-box;
+}
+.c013 {
+  border-bottom: 1px solid #DDDDDD;
+}
+.c014 {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.c015 {
+  display: flex;
+  padding: 8px 0;
+  align-items: flex-start;
+}
+.c016:focus {
+  outline: 1px dotted;
+}
+.c017 {
+  width: 108px;
+  margin-top: 4px;
+}
+.c018 {
+  position: relative;
+  padding-left: 50px;
+}
+.c018:before {
+  top: 4px;
+  left: 24px;
+  height: 24px;
+  content: "";
+  position: absolute;
+  border-left: 2px solid #000;
+}
+.c019 {
+  font-size: 21px;
+  font-weight: 600;
+}
+.c019:hover, .c019:focus {
+  text-decoration: underline;
+}
+.c019:focus {
+  outline: 1px dotted;
+}
+.c0110 {
+  font-size: 10px;
+  margin-left: 4px;
+  font-weight: 500;
+  text-transform: Uppercase;
+}
+@media (max-width: 575.8px) {
+  .c019 {
+    font-size: 14px;
+    font-weight: 600;
+  }
+  .c017 {
+    width: 70px;
+    margin-top: 0;
+  }
+  .c0110 {
+    font-size: 7px;
+  }
+  .c018 {
+    padding-left: 25px;
+  }
+  .c018:before {
+    top: 0;
+    left: 13px;
+  }
+}
+</style><style data-jss="" data-meta="y, Unthemed, Static">
+.c0168 {
+  width: 100%;
+  height: 0;
+  margin: 24px 0;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  position: relative;
+  background: linear-gradient(0deg, #FAFAFA, #FAFAFA);
+  padding-bottom: 56.25%;
+}
+.c0169 {
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+}
+</style><style data-jss="" data-meta="t, Themed, Static">
+.c0164 {
+  width: 100%;
+  margin: 10px auto;
+  display: block;
+  font-size: 15px;
+  line-height: 24px;
+}
+.c0165 a {
+  color: #0067b8;
+  border: 2px solid transparent;
+  position: relative;
+  font-weight: 500;
+  outline-offset: -3px;
+}
+.c0165 ul {
+  list-style: square;
+  padding-left: 40px;
+}
+.c0165 h2 {
+  padding: 4px 0 8px;
+  font-size: 24px;
+  line-height: 28px;
+  font-weight: 600;
+}
+.c0165 h3 {
+  padding: 8px 0 4px;
+  font-size: 20px;
+  line-height: 24px;
+  font-weight: 600;
+}
+.c0165 p {
+  padding: 6px 0 6px;
+  font-size: 15px;
+  line-height: 20px;
+}
+.c0166 {
+  margin: 10px auto;
+  max-width: 100%;
+}
+.c0167 {
+  height: 100%;
+  padding: 10px 26px;
+  display: flex;
+  flex-flow: column;
+  background: #f5f5f5;
+  align-items: center;
+  margin-bottom: 6px;
+}
+</style><style data-jss="" data-meta="t, Unthemed, Static">
+.c0141 > video {
+  left: auto !important;
+  right: 0;
+}
+</style><style data-jss="" data-meta="t, Unthemed, Static">
+.c0134 {
+  margin-bottom: 10px;
+}
+.c0134 img {
+  height: 64px;
+}
+.c0135 {
+  font-size: 32px;
+}
+.c0136 {
+  font-size: 30px;
+}
+.c0137 {
+  font-size: 46px;
+}
+.c0138 {
+  padding-top: 15px;
+}
+.c0139 {
+  overflow: visible !important;
+}
+.c0140 {
+  left: unset !important;
+  max-width: 480px !important;
+}
+@media (min-width: 1200px) {
+  .c0139 {
+    max-width: 1600px !important;
+  }
+}
+@media (max-width: 991.8px) {
+  .c0140 {
+    flex-direction: column;
+  }
+  .c0135 {
+    font-size: 28px;
+  }
+  .c0136 {
+    font-size: 22px;
+  }
+  .c0137 {
+    font-size: 34px;
+  }
+}
+@media (max-width: 575.8px) {
+  .c0135 {
+    font-size: 22px;
+  }
+  .c0136 {
+    font-size: 20px;
+  }
+}
+@media (min-width: 768px) {
+  .c0132 {
+    max-height: 30vh;
+    min-height: 370px;
+  }
+}
+</style><style data-jss="" data-meta="d, Themed, Static">
+.c0147 {
+  display: inline;
+  margin-left: 3px !important;
+  font-weight: 400 !important;
+  text-transform: uppercase;
+}
+</style><style data-jss="" data-meta="t, Themed, Static">
+.c0142 {
+  width: 13px;
+  height: 13px;
+  display: inline;
+}
+.c0143 {
+  align-items: center;
+  padding-bottom: 24px;
+}
+.c0144 {
+  width: 29px;
+  height: 29px;
+  display: inline-block;
+  text-align: center;
+  padding-top: 2px;
+  margin-right: 6px;
+  border-radius: 50%;
+  background-color: white;
+}
+.c0145 {
+  margin-right: 4px !important;
+}
+.c0146 {
+  text-transform: uppercase;
+}
+</style><style data-jss="" data-meta="t, Themed, Static">
+.c0148 {
+  color: #FFFFFF;
+  border: 2px solid transparent;
+  font-size: 13px;
+  background-color: transparent;
+}
+.c0148:hover, .c0148:focus {
+  text-decoration: underline;
+}
+.c0148:hover {
+  text-decoration: underline;
+}
+.c0149 {
+  width: 290px;
+  text-transform: uppercase;
+}
+.c0150 {
+  display: flex;
+  padding-top: 12px;
+  flex-direction: row;
+}
+.c0151 {
+  color: #FFFFFF;
+  padding: 0 8px;
+  font-style: normal;
+  font-family: MWF-MDL2;
+}
+.c0152 {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+}
+.c0153 {
+  color: #FFFFFF;
+  border: 2px solid transparent;
+  font-size: 13px;
+  background-color: transparent;
+}
+.c0153:hover, .c0153:focus {
+  text-decoration: underline;
+}
+.c0153:hover {
+  text-decoration: underline;
+}
+@media (max-width: 575.8px) {
+  .c0149 {
+    width: 250px;
+  }
+}
+</style><style data-jss="" data-meta="t, Themed, Static">
+.c0154 {
+  margin: 0;
+}
+.c0154 h2 {
+  margin: 24px 0 16px 0;
+  padding: 0;
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 28px;
+}
+.c0154 a {
+  color: #0067b8;
+  border: 2px solid transparent;
+  position: relative;
+  font-weight: 500;
+  outline-offset: -3px;
+}
+.c0154 p {
+  margin: 16px 0;
+  padding: 0;
+}
+.c0154 li {
+  margin: 11px 0;
+}
+.c0155 {
+  font-size: 24px;
+  line-height: 28px;
+}
+.c0156 {
+  margin: 16px 0px 16px 0px;
+  display: flex;
+  flex-wrap: wrap;
+  vertical-align: middle;
+  justify-content: flex-start;
+}
+.c0157 {
+  padding-right: 32px;
+  margin-bottom: 6px;
+}
+.c0158 {
+  color: #0078D7;
+  font-style: normal;
+  font-family: MWF-MDL2;
+  padding-right: 8px;
+}
+.c0159:before {
+  content: url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTQiIGhlaWdodD0iMTQiIHZpZXdCb3g9IjAgMCAxNCAxNCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4NCjxwYXRoIGQ9Ik03IDE0QzYuMzU0MTcgMTQgNS43MzE3NyAxMy45MTY3IDUuMTMyODEgMTMuNzVDNC41MzkwNiAxMy41ODMzIDMuOTgxNzcgMTMuMzQ5IDMuNDYwOTQgMTMuMDQ2OUMyLjk0NTMxIDEyLjczOTYgMi40NzM5NiAxMi4zNzUgMi4wNDY4OCAxMS45NTMxQzEuNjI1IDExLjUyNiAxLjI2MDQyIDExLjA1NDcgMC45NTMxMjUgMTAuNTM5MUMwLjY1MTA0MiAxMC4wMTgyIDAuNDE2NjY3IDkuNDYwOTQgMC4yNSA4Ljg2NzE5QzAuMDgzMzMzMyA4LjI2ODIzIDAgNy42NDU4MyAwIDdDMCA2LjM1NDE3IDAuMDgzMzMzMyA1LjczNDM4IDAuMjUgNS4xNDA2MkMwLjQxNjY2NyA0LjU0MTY3IDAuNjUxMDQyIDMuOTg0MzggMC45NTMxMjUgMy40Njg3NUMxLjI2MDQyIDIuOTQ3OTIgMS42MjUgMi40NzY1NiAyLjA0Njg4IDIuMDU0NjlDMi40NzM5NiAxLjYyNzYgMi45NDUzMSAxLjI2MzAyIDMuNDYwOTQgMC45NjA5MzhDMy45ODE3NyAwLjY1MzY0NiA0LjUzOTA2IDAuNDE2NjY3IDUuMTMyODEgMC4yNUM1LjczMTc3IDAuMDgzMzMzMyA2LjM1NDE3IDAgNyAwQzcuNjQ1ODMgMCA4LjI2NTYyIDAuMDgzMzMzMyA4Ljg1OTM4IDAuMjVDOS40NTgzMyAwLjQxNjY2NyAxMC4wMTU2IDAuNjUzNjQ2IDEwLjUzMTIgMC45NjA5MzhDMTEuMDUyMSAxLjI2MzAyIDExLjUyMzQgMS42Mjc2IDExLjk0NTMgMi4wNTQ2OUMxMi4zNzI0IDIuNDc2NTYgMTIuNzM3IDIuOTQ3OTIgMTMuMDM5MSAzLjQ2ODc1QzEzLjM0NjQgMy45ODQzOCAxMy41ODMzIDQuNTQxNjcgMTMuNzUgNS4xNDA2MkMxMy45MTY3IDUuNzM0MzggMTQgNi4zNTQxNyAxNCA3QzE0IDcuNjQ1ODMgMTMuOTE2NyA4LjI2ODIzIDEzLjc1IDguODY3MTlDMTMuNTgzMyA5LjQ2MDk0IDEzLjM0NjQgMTAuMDE4MiAxMy4wMzkxIDEwLjUzOTFDMTIuNzM3IDExLjA1NDcgMTIuMzcyNCAxMS41MjYgMTEuOTQ1MyAxMS45NTMxQzExLjUyMzQgMTIuMzc1IDExLjA1MjEgMTIuNzM5NiAxMC41MzEyIDEzLjA0NjlDMTAuMDE1NiAxMy4zNDkgOS40NTgzMyAxMy41ODMzIDguODU5MzggMTMuNzVDOC4yNjU2MiAxMy45MTY3IDcuNjQ1ODMgMTQgNyAxNFpNNyAxQzYuMTcxODggMSA1LjM5MzIzIDEuMTU4ODUgNC42NjQwNiAxLjQ3NjU2QzMuOTQwMSAxLjc4OTA2IDMuMzA0NjkgMi4yMTg3NSAyLjc1NzgxIDIuNzY1NjJDMi4yMTYxNSAzLjMwNzI5IDEuNzg2NDYgMy45NDI3MSAxLjQ2ODc1IDQuNjcxODhDMS4xNTYyNSA1LjM5NTgzIDEgNi4xNzE4OCAxIDdDMSA3LjgyODEyIDEuMTU2MjUgOC42MDY3NyAxLjQ2ODc1IDkuMzM1OTRDMS43ODY0NiAxMC4wNTk5IDIuMjE2MTUgMTAuNjk1MyAyLjc1NzgxIDExLjI0MjJDMy4zMDQ2OSAxMS43ODM5IDMuOTQwMSAxMi4yMTM1IDQuNjY0MDYgMTIuNTMxMkM1LjM5MzIzIDEyLjg0MzggNi4xNzE4OCAxMyA3IDEzQzcuODI4MTIgMTMgOC42MDQxNyAxMi44NDM4IDkuMzI4MTIgMTIuNTMxMkMxMC4wNTczIDEyLjIxMzUgMTAuNjkyNyAxMS43ODM5IDExLjIzNDQgMTEuMjQyMkMxMS43ODEyIDEwLjY5NTMgMTIuMjEwOSAxMC4wNTk5IDEyLjUyMzQgOS4zMzU5NEMxMi44NDExIDguNjA2NzcgMTMgNy44MjgxMiAxMyA3QzEzIDYuMTcxODggMTIuODQxMSA1LjM5NTgzIDEyLjUyMzQgNC42NzE4OEMxMi4yMTA5IDMuOTQyNzEgMTEuNzgxMiAzLjMwNzI5IDExLjIzNDQgMi43NjU2MkMxMC42OTI3IDIuMjE4NzUgMTAuMDU3MyAxLjc4OTA2IDkuMzI4MTIgMS40NzY1NkM4LjYwNDE3IDEuMTU4ODUgNy44MjgxMiAxIDcgMVpNNyA3VjNINlY4SDEwVjdIN1oiIGZpbGw9IiMwMDc4RDciLz4NCjwvc3ZnPg0K');
+}
+.c0160:before {
+  content: "\E787";
+}
+.c0161:before {
+  content: "\E8EC";
+}
+.c0162:before {
+  content: "\E8C8";
+}
+.c0163 {
+  color: #757575;
+  order: 99;
+  width: 100%;
+  font-style: italic;
+}
+@media (max-width: 767.8px) {
+  .c0156 {
+    margin: 20px 0px 20px 0px;
+  }
+}
+</style><style data-jss="" data-meta="g, Themed, Static">
+.c0116 {
+  width: 100%;
+  color: #666666;
+  height: 56px;
+  bottom: 0;
+  padding: 18px 0;
+  position: absolute;
+  font-size: 12px;
+  background: #F2F2F2;
+  letter-spacing: -0.04em;
+}
+.c0117 {
+  display: flex;
+  flex-wrap: wrap;
+}
+.c0118 {
+  margin-left: 24px;
+}
+.c0119:focus, .c0119:hover {
+  text-decoration: underline;
+}
+.c0119:focus {
+  outline: 1px dashed;
+  outline-offset: 3px;
+}
+@media (min-width: 576px) {
+  .c0117 {
+    justify-content: flex-end;
+  }
+}
+</style><style data-jss="" data-meta="w, Unthemed, Static">
+.c0130 {
+  display: none !important;
+}
+@media (max-width: 767.8px) {
+  .c0131 {
+    display: none !important;
+  }
+  .c0130 {
+    display: inline-block !important;
+  }
+}
+</style><style data-jss="" data-meta="x, Unthemed, Static">
+.c0170 {
+  display: flex;
+  margin-bottom: 24px;
+}
+.c0171 {
+  font-weight: bold;
+  text-transform: uppercase;
+}
+.c0172 {
+  width: 56px;
+  height: 56px;
+  flex-shrink: 0;
+  margin-right: 12px;
+}
+.c0173 {
+  text-transform: uppercase;
+}
+</style><style data-jss="" data-meta="t, Themed, Static">
+.c0120 {
+  margin-top: 50px;
+}
+.c0121 {
+  border: 1px solid #DDDDDD;
+  max-width: 360px;
+  margin-bottom: 30px;
+}
+.c0122 {
+  flex: 1;
+  display: flex;
+  padding: 16px;
+  align-items: flex-start;
+  flex-direction: column;
+}
+.c0123 {
+  width: 100%;
+  padding: 11px 16px;
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: bold;
+  border-bottom: 1px solid #DDDDDD;
+}
+.c0124 {
+  display: flex;
+}
+.c0125 {
+  margin: 16px 0;
+  font-size: 15px;
+  max-width: 100%;
+  font-weight: bold;
+}
+.c0126 {
+  text-transform: uppercase;
+}
+.c0127 {
+  width: 65px;
+  margin: 16px;
+  height: 65px;
+  flex-shrink: 0;
+}
+.c0128 {
+  margin: 28px 0;
+  font-size: 24px;
+  font-weight: 600;
+}
+.c0129 img {
+  margin-bottom: 24px;
+}
+@media (min-width: 768px) {
+  .c0121 {
+    top: 24px;
+    position: sticky;
+  }
+}
+</style><style data-jss="" data-meta="Component, Unthemed, Static">
+.c011 {
+  display: flex;
+  position: relative;
+  min-height: 100vh;
+  padding-bottom: 20px;
+  flex-direction: column;
+}
+.c015h {
+    display: flex;
+    padding: 8px 0;
+    text-align: left;
+    margin-right: 40px;
+}
+</style><style data-jss="" data-meta="Component, Unthemed, Static">
+.Forum {
+    position: relative;
+    margin-left: 0px;
+    border: 1px solid #DDDDDD;
+    max-width: 289px;
+    height: 150px;
+    margin: 12px 12px 12px 12px;
+    text-align: center;
+
+    font-size: 16px;
+}
+.comments {
+    position: relative;
+    margin: 12px 12px 12px 12px;
+    }
+#ReviewInput {
+    width: 794.97px;
+    height: 176.42px;
+}
+#Review-Title {
+    width: 794.97px;
+}
+.review {
+}
+
+</style>
+
+<script>
+  function AddComment(){
+    var ReviewTitle = document.getElementById('Review-Title').value;
+    var ReviewContent = document.getElementById('ReviewInput').value;
+    console.log(ReviewTitle);
+    console.log(ReviewContent);
+
+    var template = document.getElementById('template');
+    var finalHtml = template.innerHTML
+          .replace("{imageSource}", "https://cdn.pixabay.com/photo/2017/06/13/12/53/profile-2398782_960_720.png")
+          .replace("{Text}", ReviewTitle.bold() + "<br>" + ReviewContent);
+
+    document.body.insertAdjacentHTML('beforeend', finalHtml);
+}
+</script>
+
+<link rel="canonical" href="https://preview.education.microsoft.com/hackingStem/lesson/3cqfrhc4" data-react-helmet="true">
+</head>
+
+
+<body>
+    <div>
+        <div id="root">
+                <header class="c012 c013" data-auto-id="navbar">
+                        <div class="c014 c0111 container">
+                            <div class="c015">
+                                <div data-auto-id="navbarMicrosoftLink">
+                                    <a class="c016" href="https://www.microsoft.com">
+                                        <img class="c017"
+                                            src="https://cdn.preview.education.microsoft.com/content/en-us/shared/MicrosoftLogo.png"
+                                            alt="Microsoft">
+                                    </a>
+                                </div>
+                                <div data-auto-id="navbarHomelink" class="c018">
+                                    <a class="c019" href="/">Educator Center
+                                        <sup class="c0110">Preview</sup>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="c015">
+                                <a class="c015h" href="HackingSTEMHome.html">Hacking STEM Home</a>
+                                <a class="c015h" href="Projectlibrary.html">Project Library</a>
+                                <a class="c015h" href="NewCommunity.html">Community</a>
+                                <a class="c015h" href="ContactHackingSTEM.html">Contact Hacking STEM</a>
+                                <a class="c015h" href="CreateAProject.html">Create a Project</a>
+                            </div>
+                            <a data-auto-id="navbarSignIn" class="c015" href="/login">Sign In</a>
+                        </div>
+                    </header>
+            </section>
+            
+            
+            <div class="comments">
+                <br/>
+                <h1 class ="c0155"> <strong>Stay in touch with Hacking STEM!</strong> </h1>
+                <br/>
+                <h5 style="margin-top:7px">Send us a message!</h5>
+                <br/>
+                <div>
+                    <input type="text" id="Sender-Name" style="margin-top:15px;width: 800;" placeholder="What's your name?"/>
+                 </div>
+                 <br/>
+                <div>
+                   <input type="text" id="Comment-Title" style= "margin-top:15px; width: 800;" placeholder="Subject Title (5 words or less)"/>
+                </div>
+                <br/>
+                <div>
+                    <textarea type="text" id="ReviewInput" style= "margin-top:15px" placeholder="Talk about your experience"></textarea>
+                </div>
+                <br/>
+               
+                <button id="submitButton" onclick="AddComment();" class="c0149 c-call-to-action c-glyph" style="margin-top: 15px; float:left; width:150px; text-align:center; color: #ffffff">
+                        <span class="c0131">Submit</span>
+                </button>
+
+                <br/>
+                <br/>
+                <br/>
+                <br/>
+                <hr>
+                <h2 class ="c0155"><strong> Check us out on social media! </strong> </h2>
+                <br/>
+                <br/>
+                <a href= "https://www.facebook.com/HackingSTEM/"> <img src="https://www.danbridgerjewellery.com/wp-content/uploads/2018/03/facebook-logo-png-transparent-background.png" hspace="50" width="93"> </a>
+                <a href= "https://twitter.com/hacking_stem?lang=en"> <img src= "data:image/png;base64,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" hspace = "50" width = "100"> </a>
+                <a href= "https://www.instagram.com/microsoft/p/BQlxydDjHVQ/"> <img src = "https://media.glamour.com/photos/5cfa5d315e50abe70965cef3/16:9/w_1280%2Cc_limit/00-story-insta.jpg" width="200"> </a>
+                <a href= "https://www.youtube.com/channel/UCcr3prKCy12Wj-ur1XSMwEg"> <img src= "data:image/png;base64,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" hspace ="50" width = "93">  </a>
+                <a href= "https://www.linkedin.com/company/hackingstem/"> <img src= "data:image/png;base64,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" hspace = 40 width = 100 >  </a>
+                <br/>
+                <a style="margin:35px"> Like us on Facebook </a> 
+                <a style="margin:20px"> Follow us on Twitter </a>
+                <a style="margin:40px"> Follow us on Instagram </a>
+                <a> Like, comment, subscribe </a>
+                <a style="margin:5px"> Connect with us on LinkedIn </a>
+    
+
+
+
+            <!--Comments-->        
+                    <div class="review" id="template" span hidden>
+                    <div style="position:relative; margin: 0px 12px 12px 12px; left:85px">
+                     <div id=accountInfo width="50" style="display: inline-block;">
+                      <br/>
+                        <img id=ProfilePicture src="{imageSource}" width="50" style="align-content: center"/>
+                        <br/>
+                        <div id=NameAndLocation width="50" style="display: inline-block; text-align:center"> 
+                            Name<br/>Location
+                        </div>
+                     </div>
+                        <div style="width: 1px; background-color: #707070; display: inline-block; vertical-align: top; height: 130px; margin-left: 15px; margin-right: 15px;">&nbsp;</div>
+                         <div id=ReviewResult style="display: inline-block; vertical-align: top; width:85%;">{Text}</div>
+                        </div>
+                         <div class="review" id="template" span hidden>
+                    <div style="position:relative; margin: 0px 12px 12px 12px; left:85px">
+                     <div id=accountInfo width="50" style="display: inline-block;">
+                      <br/>
+                        <img id=ProfilePicture src="{imageSource}" width="50" style="align-content: center"/>
+                        <br/>
+                        <div id=NameAndLocation width="50" style="display: inline-block; text-align:center"> 
+                            Name<br/>Location
+                        </div>
+                     </div>
+                        <div style="width: 1px; background-color: #707070; display: inline-block; vertical-align: top; height: 130px; margin-left: 15px; margin-right: 15px;">&nbsp;</div>
+                         <div id=ReviewResult style="display: inline-block; vertical-align: top; width:85%;">{Text}</div>
+                        </div>
+                </div>
+                                    <div class="review" id="template" span hidden>
+                    <div style="position:relative; margin: 0px 12px 12px 12px; left:85px">
+                     <div id=accountInfo width="50" style="display: inline-block;">
+                      <br/>
+                        <img id=ProfilePicture src="{imageSource}" width="50" style="align-content: center"/>
+                        <br/>
+                        <div id=NameAndLocation width="50" style="display: inline-block; text-align:center"> 
+                            Name<br/>Location
+                        </div>
+                     </div>
+                        <div style="width: 1px; background-color: #707070; display: inline-block; vertical-align: top; height: 130px; margin-left: 15px; margin-right: 15px;">&nbsp;</div>
+                         <div id=ReviewResult style="display: inline-block; vertical-align: top; width:85%;">{Text}</div>
+                        </div>
+                </div>
+                </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div> 
+
+<!--
+<footer class="c0116"><div class="c0117 c0111 container"><a href="https://support.microsoft.com/contactus/" class="c0118 c0119">Contact us</a><a href="https://privacy.microsoft.com/PrivacyStatement" class="c0118 c0119">Privacy &amp; cookies</a><a href="https://www.microsoft.com/servicesagreement/" class="c0118 c0119">Terms of use</a><span class="c0118">© Microsoft 2019</span></div></footer>
+-->
+
+    <script type="text/javascript">
+        var sessionInfo = {"isSignedIn":false,"userData":null,"cdnUrl":"https://cdn.preview.education.microsoft.com","mecUrl":null,"correlationVector":"e1xyC2xQs0aIF+mhZ7UGnA.1","csrfToken":null,"browserLocale":"en-us"};
+        
+        var appSettings = {
+            ariaIngestionKey: '0464b426f699433694ab827c99f28c2c-a7241377-2c58-4414-a180-75329c47783a-7042'
+        };
+
+        var flights= {"BRS_UseCDNFiles":true,"BRS_StoreProgressAndWait":true,"BRS_AcceptCourseCompletion":true,"BRS_ShowTranscripts":true,"BRS_HackingStem":true,"BRS_LogSQLQueries":false,"BRS_IncludeMecCurrentBadges":true,"ContentBlacklist":["054e2152","3805ac82","46b3faaa","494374a4","ac180d71","ae8d3f8c","d12632e9","dd803e65","ec92c746","3f593976","42ebef72","d4f6745b","a783c508","bce6c0ff","d9e0a1a9","5b35c9b0","0b39dada","220b5d40","b1485a4b","20c5ad0a","813f30f1","09bfcf4a","658ed196","dab2127d","beb9828a","68f70f44","0a60eeb6","24247e05","268298dc","57ad1972","6ce25a78","80726276","87f97b1b","aa4bb88b","ad1b5fd9","cd84b9ee","5f4d7eca","4556eeca","2a12fbbd","a7f6be37","9c599359","30a7b5e8","c3c376f8","5fed9211","2e1ab428","e9e4e6f7","72e5bfbf"]};
+
+        var buildInfo = {
+            buildVersion: 'master_20190729.2'
+        };
+
+        var homepageData = {"title":"Microsoft Educator Centre Preview","subTitle":"Welcome to the first courses available in your updated Microsoft Educator Centre. Explore new concepts and develop skills while you earn professional development credit.","heroes":[{"title":"Welcome","subTitle":"Learn and explore with training and resources, and earn badges and certificates on a personalized hub created for educators like you.","iconPath":null,"heroPaths":{"xl":"training_1600x600.jpg","l":"training_1259x472.jpg","m":"training_1083x609.jpg","s":"training_767x431.jpg","xs":"training_539x303.jpg"},"callToAction":null,"isDark":true}],"banner":{"title":"Hacking Stem","subTitle":"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat","heroPaths":{"xl":"https://cdn.preview.education.microsoft.com/content/en-us/courses/77478dfd/hero_539x303.jpg","l":"https://cdn.preview.education.microsoft.com/content/en-us/courses/77478dfd/hero_767x431.jpg","m":"https://cdn.preview.education.microsoft.com/content/en-us/courses/77478dfd/hero_1083x609.jpg","s":"https://cdn.preview.education.microsoft.com/content/en-us/courses/77478dfd/hero_1259x472.jpg","xs":"https://cdn.preview.education.microsoft.com/content/en-us/courses/77478dfd/hero_1600x600.jpg"},"link":{"text":"link 1234","target":"/course/206fcd47/overview"},"isShowBanner":false},"modules":null,"actionItems":[{"icon":"coursesIcon","imagePath":null,"title":"Explore courses","text":"Learn how to use Microsoft technology in your classroom in effective and engaging ways while also earning professional development hours.","link":{"text":"Browse courses","target":"/courses"}},{"icon":"learningPathsIcon","imagePath":null,"title":"Explore learning paths","text":"Focus on skill development or master Microsoft products in a learning path, a collection of courses for deeper learning in a topic.","link":{"text":"Browse learning paths","target":"/learningPaths"}},{"icon":"achievementsIcon","imagePath":null,"title":"View your achievements","text":"See the badges and points you've earned in your profile. You can also share your training transcript to document your learning to others.","link":{"text":"View my profile","target":"/profile"}},{"icon":"connectIcon","imagePath":null,"title":"Connect with Microsoft EDU","text":"Keep up with the latest training and resources. Subscribe to the MEC newsletter to stay in the know.","link":{"text":"See what's new with Microsoft EDU","target":"https://education.microsoft.com/Start/UserCommunicationPreference"}}],"featuredContent":{"newAndNoteworthy":[{"id":"23b7f02f","type":"course"},{"id":"87c99804","type":"course"},{"id":"ac59d6bc","type":"course"},{"id":"c04cb8b0","type":"course"},{"id":"b205eb8c","type":"course"},{"id":"4962d5dc","type":"course"}],"learningPaths":[{"id":"dc32e990","type":"learningpath"},{"id":"b6e3b5f2","type":"learningpath"},{"id":"c9926cff","type":"learningpath"},{"id":"1ce2977c","type":"learningpath"},{"id":"e9a3beec","type":"learningpath"},{"id":"15c0f683","type":"learningpath"}]},"mosaics":[{"id":"home_mosaic","tiles":[{"id":"1","heading":"Partnering with NASA STEM on Station","subheading":"Microsoft Education in partnership with NASA have developed this collection of lesson plans to celebrate the astronauts’ contributions to improving life both in space and on Earth.","links":[{"text":"VIEW LESSON PLANS","target":"hackingStem"}],"tiles":null,"width":"half","height":"large","background":"f-background-neutral-75","imagePath":"pages/homepage/mosaic_iss2.jpg","hasOverlay":true},{"id":"2","heading":"Student Centered Learning","subheading":"Support the success of your students with tools and resources to help them be their best selves, share their voice, and collaborate.","links":[{"text":"INCLUSIVE CLASSROOM","target":"learningPath/ab56bd49"},{"text":"VOICE AND COLLABORATION","target":"learningPath/18793af1"}],"tiles":null,"width":"half","height":"medium","background":"f-background-neutral-80","imagePath":null,"hasOverlay":false},{"id":"3","heading":null,"subheading":null,"links":null,"tiles":[{"id":"2-1","heading":"Skype in the Classroom","subheading":"Skype in the Classroom is a free community that offers live transformative educational experiences for students including Virtual Field Trips, talks from Guest Speakers, classroom to classroom connections, and live collaboration projects.","links":[{"text":"EXPLORE ACTIVITIES","target":"https://education.microsoft.com/skype-in-the-classroom/overview"}],"tiles":null,"width":"quarter","height":"medium","background":"f-background-accent","imagePath":null,"hasOverlay":false},{"id":"2-2","heading":null,"subheading":null,"links":null,"tiles":null,"width":"quarter","height":"medium","background":"f-background-neutral-75","imagePath":"pages/homepage/mosaic_student.png","hasOverlay":false}],"width":"half","height":null,"background":null,"imagePath":null,"hasOverlay":false}]}],"id":"homepage","isTestData":null};
+    </script>
+
+    <script src="https://cdn.preview.education.microsoft.com/dist/public/20190729.2/vendors.b83a606d1830e50cdbd1.js"></script>
+
+
+
+</body></html>
