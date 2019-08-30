@@ -101,7 +101,7 @@ This function loads the forum button, which is on every project page and links t
   
   ## Contact Us
   This brings up the form/textboxes where people can fill out the information and send a message to Hacking STEM.
-  
+  ```html
   <div class="comments">
     <br/>
       <h1 class ="c0155"> <strong>Stay in touch with Hacking STEM!</strong> </h1>
@@ -126,9 +126,7 @@ This function loads the forum button, which is on every project page and links t
 ```
 ## Discussion Topic Search
 This is where users can search for certain discussions
- <div id="Topic">
- <br/><h2 style="margin-bottom:15px" >Robotic Hand</h2>
-  <!--Search Bar for the Discussions!-->
+```html
  <input type= "text" placeholder = "Search for Questions, Key Words" style="margin:-5px 10px 20px 0px; border-style: solid; border-width:1px; border-color:#2266E3; padding: 5px; width: 460px;">   
  <a href="./Discussion Page.html">
  <div class="discussionB" style="
@@ -139,13 +137,12 @@ This is where users can search for certain discussions
     border-style: solid;
     padding: 15px 20px 15px 40px;
     font-size: 17px;">                                
- <b>{Discussion Question}</b><br/>
- No current answer
 <img src="https://image.flaticon.com/icons/png/512/118/118740.png" style="width:20px; float:right; vertical-align:center"/>
  </div>
 </a>
 </div>
 <div id="ListStart"></div>
+```
 
 ## Contributing
 Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
